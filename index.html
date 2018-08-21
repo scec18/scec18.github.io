@@ -9,8 +9,7 @@
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="style.css">
-	  <link rel="stylesheet" href="https://github.com/scecforum/scecforum.github.io/tree/master/font-awesome/css/font-awesome.min.css">
-	
+	  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
@@ -23,6 +22,8 @@
 		<div class="topSectionWrapper">
 				<!-- Navbar size fits the screen -->
 	  		<nav class="navbar navbar-fixed-top longNavbar" id="navbarTop">
+					<a class="navbar-brand generousSponsor" href="#">Genorously sponsored by</a>
+					<a href="https://www.nsf.gov/" target="_blank"><img src="../img/nsf.jpg" class="navbarNsfLogo" id="theNsfLogo" alt="NSF Logo"></a>
 						<ul class="nav navbar-nav navbar-right longNavbar">
 								<li id="overwiewOption"><a href="#">Overview</a></li>
 								<li id="topicsOption"><a href="#">Topics</a></li>
@@ -30,15 +31,24 @@
 								<li id="datesOption"><a href="#">Dates</a></li>
 								<li id="committeeOption"><a href="#">Committee</a></li>
 								<li id="sponsorsOption"><a href="#">Sponsors</a></li>
-								<li id="CFAOption"><a href="#">CFP</a></li>
+								<li id="CFAOption"><a href="#">CFA</a></li>
 								<li id="registrationOption"><a href="#">Registration</a></li>
 								<li id="contactOption"><a href="#">Contact</a></li>
-							
+								<li id="photosOption"><a href="#">Photos</a></li>
 						</ul>
 				</nav>
 				<!-- Navbar collapses since it does not fit the screen -->
 				<nav class="navbar navbar-inverse navbar-fixed-top shortNavbar">
 			 			<div class="container-fluid">
+			 				<div class="navbar-header">
+								<a class="navbar-brand hideBelow409" href="javascript:;">Generously sponsored by</a>
+								<a href="https://www.nsf.gov/" target="_blank"><img src="../img/nsf.jpg" class="navbarNsfLogo-sm" alt="NSF Logo"></a>
+			 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			 							<span class="icon-bar"></span>
+			 							<span class="icon-bar"></span>
+			 							<span class="icon-bar"></span>
+			 						</button>
+			 				</div>
 			 					<div class="collapse navbar-collapse" id="myNavbar">
 			 						<ul class="navbar-right">
 										<li id="overwiewOption"><a href="#">Overview</a></li>
@@ -47,10 +57,10 @@
 										<li id="datesOption"><a href="#">Dates</a></li>
 										<li id="committeeOption"><a href="#">Committee</a></li>
 										<li id="sponsorsOption"><a href="#">Sponsors</a></li>
-										<li id="CFAOption"><a href="#">CFP</a></li>
+										<li id="CFAOption"><a href="#">CFA</a></li>
 										<li id="registrationOption"><a href="#">Registration</a></li>
 										<li id="contactOption"><a href="#">Contact</a></li>
-								
+										<li id="photosOption"><a href="#">Photos</a></li>
 			 						</ul>
 			 					</div>
 			 			</div>
@@ -64,16 +74,17 @@
  					<div class="col-md-2"></div>
  					<div class="col-md-8">
  						<div class="date container">
+ 								<div class="fa fa-calendar fa-3x calendar" aria-hidden="true"></div>
  								<div class="specificDate">
- 									<b>December 13-14, 2018</b><br />
+ 									<b>December 13-14, 2018</b>
  								</div>
  						</div>
  						<div class="seperator"></div>
-						<div class="location container">
+						<a href="https://www.google.com/maps/place/Hotel+Royal+Orchid/@26.8449021,75.793041,15z/data=!4m5!3m4!1s0x0:0x6bfe7d1ce5d6c4e!8m2!3d26.8449021!4d75.793041" target="_blank">
+ 						<div class="location container">
+ 								<div class="fa fa-map-marker fa-3x locationLogo" aria-hidden="true"></div>
  								<div class="specificDate left-aligned">
 									Delhi, India
-									Venue TBD <br />
- 									
  								</div>
  						</div>
 						</a>
@@ -86,8 +97,8 @@
  		<div class="container-fluid hidden-md hidden-lg hidden-xl">
  			<div class="eventTitle1">
  				<h1 class="text-center">Second Workshop on Software Challenges to Exascale Computing</h1>
- 				<h2 class="text-center">December 13-14, 2018<br />
- 				Delhi, India</a></h2>
+ 				<h2 class="text-center">December 17, 2017<br /><b>9:30 AM - 5:30 PM</b><br/>
+ 				Jaipur, Rajasthan, India</a></h2>
  			</div>
  		</div>
  		</div>
@@ -102,18 +113,19 @@
 		            </div>
 		          	<div class="col-md-6">
 		          	<h3 class="bold"> Overview</h3>
-		          	<p class="fontType justified">Supercomputing or High Performance Computing (HPC) platforms are used to power discoveries and to reduce the time-to-results in a wide variety of disciplines (such as, astrophysics, archaeology, and financial trading). For optimally utilizing these high-end platforms, it is critical to have scalable and efficient software (applications, middleware, libraries, and tools) that can take advantage of the innovative hardware features in these platforms. However, developing and maintaining HPC software remains a challenging task because the HPC platforms for which they are developed typically have a short life-span, and are replaced with next generation platforms within a few years. As we progress towards the exascale computing era, the task of developing and maintaining HPC software is likely to become even more challenging than now due to the increasing complexity of the HPC platforms and the pressing need for power-efficiency and memory usage optimization. There is a potential of mitigating some of the challenges related to developing HPC software for the current and future generation systems by adopting the innovations in the advanced software engineering sub-disciplines, such as model-driven engineering, generative programming, and adaptive and reflective software systems.</p>
+		          	<p class="fontType justified">
+									Supercomputers are used to power discoveries and to reduce the time-to-results in a wide variety of disciplines such as engineering, physical sciences, and healthcare. They are globally considered as vital for staying competitive in defense, research and development activities in various disciplines, financial sector, several mainstream businesses and even agriculture. An integral requirement for enabling the usage of the supercomputers, like any other computer, is the availability of the software. Scalable and efficient software is typically required for optimally using the large-scale supercomputing platforms, and thereby, effectively leveraging the investments in the advanced CyberInfrastructure (CI). However, developing and maintaining such software is challenging due to several factors, such as, 1) no well-defined processes or guidelines for writing software that can ensure high-performance on supercomputers, and 2) shortfall of trained workforce having skills in both software engineering and supercomputing. With the rapid advancement in the computer architecture discipline, the complexity of the processors that are used in the supercomputers is also increasing, and, in turn, the task of developing efficient software for supercomputers is further becoming challenging and complex. To mitigate such challenges, there is a need for a common platform that brings together different stakeholders - the researchers and practitioners from the areas of software engineering and supercomputing. To provide such a platform, the second workshop on "Software Challenges to Exascale Computing (SCEC)" is being organized in Delhi, India, in December 2018.
 								<br/>
-		          	<p class="fontType justified">The goals of the second workshop on “Software Challenges to Exascale Computing” are to foster international collaborations across the HPC and the advanced software engineering disciplines, and to exchange knowledge on the challenges and solution strategies for developing scalable and efficient HPC software. The workshop attendees will learn about the state-of-the-art and the state-of-the-practice in the areas of HPC software development and advanced software engineering through presentations, hands-on sessions, and open-discussion sessions. Those already skilled in the advanced software engineering discipline will learn about the challenges and opportunities in the HPC domain, and can find interesting test cases for generalizing their innovative approaches.</p>
-		            </div>
+		          	<p class="fontType justified">The SCEC18 workshop will not only inform the participants about the challenges in large-scale HPC software development but will also steer them in the direction of building international collaborations for finding solutions to those challenges. The workshop will provide a forum through which hardware vendors and software developers can communicate with each other and influence the architecture of the next generation supercomputing systems and the supporting software stack. By fostering cross-disciplinary associations, the workshop will serve as a stepping-stone towards innovations in the future.
+								</div>
 		            <div class="col-md-6">
 		            <h3 class="bold remove"> Overview</h3>
-		            <p class="fontType justified">The workshop will provide a forum through which hardware vendors and software developers can communicate with each other and influence the architecture of the next generation supercomputing systems and the supporting software stack. By fostering cross-disciplinary associations, the workshop will serve as a stepping stone towards innovations in the future. <br/><br />
-		          	Benefits to the researchers and users in the academia: disseminate your results to the public, and find potential collaborators. <br /> <br />
-								Benefits to software developers: understand the future trends in the HPC hardware and develop collaborations in the code modernization and optimization disciplines.<br /> <br />
-								Benefits to HPC service providers: understand the challenges that the community faces in using the HPC platforms efficiently, and connect with the user-community. <br /><br />
-								Benefits to HPC hardware vendors: understand the evolving needs of the HPC community, and network with potential customers.<br /><br />
-								Benefits to students: network with HPC and advanced software engineering professionals and researchers, learn about internship and career opportunities, discuss the opportunities for higher education.
+		            <p class="fontType justified">Benefits of the SCEC18 workshop to the researchers and users in the academia: the workshop will provide an opportunity to disseminate their results to the public, and find potential collaborators. <br/><br />
+		          	Benefits of the SCEC18 workshop to software developers: the workshop will provide an opportunity to understand the future trends in the HPC hardware and develop collaborations in the code modernization and optimization disciplines. <br /> <br />
+								Benefits of the SCEC18 workshop to HPC service providers: the workshop will provide an opportunity to understand the challenges that the community faces in using the HPC platforms efficiently, and connect with the user-community. <br /><br />
+								Benefits of the SCEC18 workshop to HPC hardware vendors: the workshop will provide an opportunity to understand the evolving needs of the HPC community, and network with potential customers. <br /><br />
+								Benefits of the SCEC18 workshop to students: the workshop will provide an opportunity to network with HPC and advanced software engineering professionals, faculties and researchers, learn about the internship and career opportunities, discuss the opportunities for higher education. <br /><br />
+								The workshop proceedings will be of interest to the students, researchers, and other professionals who are working in the areas of HPC software and large-scale supercomputers.
 								</p>
 							</div>
 		         </div>
@@ -125,19 +137,18 @@
 		        	<div class="theBorder container">
 		            <h3 class="bold"><u><br>Topics of interest include, but are not limited to:</u></h3>
 		            <ul class="noList fontType">
-				   <li>Generative programming techniques in HPC</li>
-				   <li>Domain-Specific Languages in HPC </li>
-				   <li>Supporting software and middleware for HPC environments: e.g., MPI libraries</li>
-				   <li>Profiling, debugging, and parallelizing tools </li>
-				   <li>Tools and techniques for memory and power optimization</li>
-				   <li>Tools and techniques for code modernization</li>
-				   <li>Large-scale HPC applications (tuning, optimization, and implementation on HPC resources)</li>
-				   <li>HPC Science Gateways, Containerization (HPC in the Cloud)</li>
-				   <li>Fault-tolerance</li>
-				   <li>Filesystems and Parallel I/O</li>
-				   <li>Best practices for HPC software development</li>
-				   <li>High-level interfaces, libraries, compilers, and runtime systems for parallel programming</li>
-		                
+									<li>Generative programming techniques in HPC</li>
+				 <li>Domain-Specific Languages in HPC </li>
+				 <li>Supporting software and middleware for HPC environments: e.g., MPI libraries</li>
+				 <li>Profiling, debugging, and parallelizing tools </li>
+				 <li>Tools and techniques for memory and power optimization</li>
+				 <li>Tools and techniques for code modernization</li>
+				 <li>Large-scale HPC applications (tuning, optimization, and implementation on HPC resources)</li>
+				 <li>HPC Science Gateways, Containerization (HPC in the Cloud)</li>
+				 <li>Fault-tolerance</li>
+				 <li>Filesystems and Parallel I/O</li>
+				 <li>Best practices for HPC software development</li>
+				 <li>High-level interfaces, libraries, compilers, and runtime systems for parallel programming</li>
 		            </ul>
 		        </div >
 						<br />
@@ -146,24 +157,1282 @@
 
 		<a name="agendaOption"></a>
 				<div class="onlyBorder2">
-        
-        
+	        <div class="container-fluid topicsSec">
+		        	<div class="theBorder container">
+									  <div class="col-xs-12 hideAgendaTitle-md">
+												<div class="col-xs-1"></div>
+												<div class="col-xs-10">
+														<br />
+														<h1 class="bold"> Agenda on December 13, 2018 </h1>
+												</div>
+												<div class="col-xs-1"></div>
+										</div>
+										<div class="hideAgendaTitle-lg-sm1 hideAgendaTitle-lg-sm">
+												<br />
+												<h1 class="bold"> Agenda on December 13, 2018 </h1>
+										</div>
+										<div class="hideAgendaTitle-lg1 hideAgendaTitle-max477">
+												<br />
+												<h1 class="bold"> Agenda on December 13, 2018 <br /></h1>
+										</div>
+										<div class="hideAgendaTitle-min477 hideAgendaTitle-max399">
+												<br />
+												<h2 class="bold"> Agenda on December 13, 2018 <br /></h1>
+										</div>
+										<div class="hideAgendaTitle-min399">
+												<br />
+												<h4 class="bold"> Agenda on December 13, 2018 <br /></h1>
+										</div>
+										<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2 bold">Time
+											</div>
+											<div class="col-xs-8 bold left-aligned">Topic
+											</div>
+											<div class="col-xs-2 bold left-aligned">Speaker
+											</div>
+										</div>
+										<div class="col-xs-12 hideAbove500 styleFont1">
+												<div class="col-xs-2 bold paddingLeftEventTime">Time
+												</div>
+												<div class="col-xs-8 bold left-aligned paddingLeftEventTitle">Topic
+												</div>
+												<div class="col-xs-2 bold left-aligned paddingLeftSpeaker">Speaker
+												</div>
+										</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-md-2">09:30 AM - 10:00 AM
+											</div>
+											<div class="col-md-8 center-aligned">REGISTRATION, TEA/COFFEE
+											</div>
+											<div class="col-md-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 redBackground styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">09:30 AM - 10:00 AM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">REGISTRATION, TEA/COFFEE
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+								<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+								<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">10:00 AM - 10:15 AM
+											</div>
+											<div class="col-xs-8 left-aligned">Opening Remarks
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+								</div>
+								<div class="col-xs-12 hideAbove500 styleFont">
+										<div class="col-xs-2 paddingLeftEventTime">10:00 AM - 10:15 AM
+										</div>
+										<div class="col-xs-8 left-aligned paddingLeftEventTitle">Opening Remarks
+										</div>
+										<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+										</div>
+								</div>
+								<div class="col-xs-12"><hr /></div>
+								<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">10:15 AM - 10:45 AM
+											</div>
+											<div class="col-xs-8 left-aligned">Invited Talk-1
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+								</div>
+								<div class="col-xs-12 hideAbove500 styleFont">
+										<div class="col-xs-2 paddingLeftEventTime">10:15 AM - 10:45 AM
+										</div>
+										<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-1
+										</div>
+										<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+										</div>
+								</div>
+								<!--
+								<div class="hideBelow760">
+											<div class="col-xs-3">
+													<img src="../img/Chaudhary.jpg" class="speakersPic addMarginTopPic" alt="Chaudhary Picture">
+								</div>
+								<div class="col-xs-9 desc">
+														<p class="fontType justified">
+															<span class="bold">Abstract: </span>Advanced cyberinfrastructure and the ability to perform large-scale simulations and accumulate massive amounts of data have revolutionized scientific and engineering disciplines. In this talk I will give an overview of the National Strategic Computing Initiative (NSCI) that was launched by Executive Order (EO) 13702 in July 2015 to advance U.S. leadership in high performance computing (HPC). The NSCI is a whole-of-nation effort designed to create a cohesive, multi-agency strategic vision and Federal investment strategy, executed in collaboration with industry and academia, to maximize the benefits of HPC for the United States. I will then discuss NSF’s role in NSCI and present three cross-cutting software programs ranging from extreme scale parallelism to supporting robust, reliable and sustainable software that will support and advance sustained scientific innovation and discovery.
+															<br />
+
+															<span class="bold"><br />Bio: </span>A veteran of High Performance Computing (HPC), Dr. Chaudhary has been actively participating in the science, business, government, and technology innovation frontiers of HPC for over two decades. His contributions range from heading research laboratories and holding executive management positions, to starting new technology ventures. He is currently a Program Director in the Office of Advanced Cyberinfrastructure at National Science Foundation. He is Empire Innovation Professor of Computer Science and Engineering at the Center for Computational Research at the New York State Center of Excellence in Bioinformatics and Life Sciences at SUNY Buffalo, and the Director of the university’s Data Intensive Computing Initiative. He is also the co-founder of the Center for Computational and Data-Enabled Science and Engineering.<br /><br />
+
+														He cofounded Scalable Informatics, a leading provider of pragmatic, high performance software-defined storage and compute solutions to a wide range of markets, from financial and scientific computing to research and big data analytics. From 2010 to 2013, Dr. Chaudhary was the Chief Executive Officer of Computational Research Laboratories (CRL) where he grew the company globally to be an HPC cloud and solutions leader before selling it to Tata Consulting Services. Prior to this, as Senior Director of Advanced Development at Cradle Technologies, Inc., he was responsible for advanced programming tools for multi-processor chips. He was also the Chief Architect at Corio Inc., which had a successful IPO in June, 2000.<br /><br />
+
+														Dr. Chaudhary’s research interests are in High Performance Computing and Applications to Science, Engineering, Biology, and Medicine; Big Data; Computer Assisted Diagnosis and Interventions; Medical Image Processing; Computer Architecture and Embedded Systems; and Spectrum Management. He has published approximately 200 papers in peer-reviewed journals and conferences and has been the principal or co-principal investigator on over $28 million in research projects from government agencies and industry. Dr. Chaudhary was awarded the prestigious President of India Gold Medal in 1986 for securing the first rank amongst graduating students at the Indian Institute of Technology (IIT). He received the B.Tech. (Hons.) degree in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur, in 1986 and a Ph.D. degree from The University of Texas at Austin in 1992.</p><br />
+													</div>
+										</div>
+										<div class="hideAbove760">
+											 <div class="col-lg-3">
+													 <img src="../img/Chaudhary.jpg" class="speakersPic addMarginTopPic" alt="Chaudhary Picture">
+											 </div>
+											 <div class="col-lg-9 desc">
+														 <p class="styleFont fontType justified">
+															 <span class="bold">Abstract: </span>Advanced cyberinfrastructure and the ability to perform large-scale simulations and accumulate massive amounts of data have revolutionized scientific and engineering disciplines. In this talk I will give an overview of the National Strategic Computing Initiative (NSCI) that was launched by Executive Order (EO) 13702 in July 2015 to advance U.S. leadership in high performance computing (HPC). The NSCI is a whole-of-nation effort designed to create a cohesive, multi-agency strategic vision and Federal investment strategy, executed in collaboration with industry and academia, to maximize the benefits of HPC for the United States. I will then discuss NSF’s role in NSCI and present three cross-cutting software programs ranging from extreme scale parallelism to supporting robust, reliable and sustainable software that will support and advance sustained scientific innovation and discovery.
+															 <br />
+
+															 <span class="bold"><br />Bio: </span>A veteran of High Performance Computing (HPC), Dr. Chaudhary has been actively participating in the science, business, government, and technology innovation frontiers of HPC for over two decades. His contributions range from heading research laboratories and holding executive management positions, to starting new technology ventures. He is currently a Program Director in the Office of Advanced Cyberinfrastructure at National Science Foundation. He is Empire Innovation Professor of Computer Science and Engineering at the Center for Computational Research at the New York State Center of Excellence in Bioinformatics and Life Sciences at SUNY Buffalo, and the Director of the university’s Data Intensive Computing Initiative. He is also the co-founder of the Center for Computational and Data-Enabled Science and Engineering.<br /><br />
+
+														 He cofounded Scalable Informatics, a leading provider of pragmatic, high performance software-defined storage and compute solutions to a wide range of markets, from financial and scientific computing to research and big data analytics. From 2010 to 2013, Dr. Chaudhary was the Chief Executive Officer of Computational Research Laboratories (CRL) where he grew the company globally to be an HPC cloud and solutions leader before selling it to Tata Consulting Services. Prior to this, as Senior Director of Advanced Development at Cradle Technologies, Inc., he was responsible for advanced programming tools for multi-processor chips. He was also the Chief Architect at Corio Inc., which had a successful IPO in June, 2000.<br /><br />
+
+														 Dr. Chaudhary’s research interests are in High Performance Computing and Applications to Science, Engineering, Biology, and Medicine; Big Data; Computer Assisted Diagnosis and Interventions; Medical Image Processing; Computer Architecture and Embedded Systems; and Spectrum Management. He has published approximately 200 papers in peer-reviewed journals and conferences and has been the principal or co-principal investigator on over $28 million in research projects from government agencies and industry. Dr. Chaudhary was awarded the prestigious President of India Gold Medal in 1986 for securing the first rank amongst graduating students at the Indian Institute of Technology (IIT). He received the B.Tech. (Hons.) degree in Computer Science and Engineering from the Indian Institute of Technology, Kharagpur, in 1986 and a Ph.D. degree from The University of Texas at Austin in 1992.</p><br />
+											 </div>
+										 </div>-->
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">10:45 AM - 11:15 AM
+											</div>
+											<div class="col-xs-8 left-aligned">Invited Talk-2
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">10:45 AM - 11:15 AM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-2
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<!--
+									<div class="hideBelow760">
+												<div class="col-xs-3">
+														<br />
+														<img src="../img/Takizawa.jpg" class="speakersPic" alt="Takizawa Picture">
+									</div>
+									<div class="col-xs-9 desc">
+															<p class="fontType justified">
+
+																<span class="bold">Abstract: </span>Today, high-performance computing (HPC) application codes are often optimized and specialized for a particular system configuration to exploit the system's potential. One severe problem is that simply modifying an HPC application code often results in degrading the performance portability, readability, and maintainability of the code. Therefore, we have been developing a code transformation framework, Xevolver, so that users can easily define their own code transformation	rules for individual cases, in order to express how each application	code should be changed to achieve high performance. In this talk, I will briefly review the Xevolver framework and introduce some case studies to discuss the benefits of the user-defined code transformation approach.<br />
+
+																<span class="bold"><br />Bio: </span>Hiroyuki Takizawa is currently a professor of Cyberscience Center, Tohoku University. His research interests include performance-aware programming, high-performance computing systems and their applications. Since 2011, he is leading a research project, supported by JST CREST, to explore an effective way of assisting legacy HPC code migration to future-generation extreme-scale computing systems. He received the B.E. Degree in Mechanical Engineering, and the M.S. and Ph.D. Degrees in Information Sciences from Tohoku University in 1995, 1997 and 1999, respectively.
+															</p>
+												</div>
+											</div>
+											<div class="hideAbove760">
+												<div class="col-lg-3">
+														<img src="../img/Takizawa.jpg" class="speakersPic addMarginTopPic" alt="Takizawa Picture">
+												</div>
+												<div class="col-lg-9 speakerDesc">
+															<p class="styleFont fontType justified">
+																<span class="bold">Abstract: </span>Today, high-performance computing (HPC) application codes are often optimized and specialized for a particular system configuration to exploit the system's potential. One severe problem is that simply modifying an HPC application code often results in degrading the performance portability, readability, and maintainability of the code. Therefore, we have been developing a code transformation framework, Xevolver, so that users can easily define their own code transformation	rules for individual cases, in order to express how each application	code should be changed to achieve high performance. In this talk, I will briefly review the Xevolver framework and introduce some case studies to discuss the benefits of the user-defined code transformation approach.<br />
+
+																<span class="bold"><br />Bio: </span>Hiroyuki Takizawa is currently a professor of Cyberscience Center, Tohoku University. His research interests include performance-aware programming, high-performance computing systems and their applications. Since 2011, he is leading a research project, supported by JST CREST, to explore an effective way of assisting legacy HPC code migration to future-generation extreme-scale computing systems. He received the B.E. Degree in Mechanical Engineering, and the M.S. and Ph.D. Degrees in Information Sciences from Tohoku University in 1995, 1997 and 1999, respectively.
+															</p>
+												</div>
+											</div>
+-->
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">11:15 AM - 11:45 AM
+											</div>
+											<div class="col-xs-8 left-aligned">Invited Talk-3
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">11:15 AM - 11:45 AM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-3
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-xs-2">11:45 AM - 12:00 PM
+											</div>
+											<div class="col-xs-8 center-aligned">COFFEE BREAK
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont redBackground">
+											<div class="col-xs-2 paddingLeftEventTime">11:45 AM - 12:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">COFFEE BREAK
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">12:00 PM - 12:40 PM
+											</div>
+											<div class="col-xs-8 left-aligned">Multiple lightning talks, 10 minutes each
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">12:00 PM - 12:40 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Multiple lightning talks, 10 minutes each
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+										<!--<div class="hideBelow760">
+											<div class="col-xs-3">
+													<img src="../img/Avinash.jpg" class="avinashPic addMarginTopPic" alt="Dr. Nash Palaniswamy's Picture">
+											</div>
+											<div class="col-xs-9 desc">
+													<p class="fontType justified">
+														<span class="bold">Abstract: </span>Intel is investing in a broad set of technologies to move computing to the address the challenges of Exascale computing. These technologies are targeted to reach next generation performance in a configurable system that can achieve exceptional performance in data analytics, traditional high performance computing and artificial intelligence. Being able to address all of these application domains is of critical importance.<br /><br />
+
+														Intel is investing in processors, fabric, memory and software.  Each will be discussed along with their respective importance in achieving Exascale.<br />
+
+													<span class="bold"><br />Bio: </span>Dr. Nash Palaniswamy has been at Intel since October 2005, and focuses in the area of Enterprise and High Performance Computing in the Datacenter group. He is currently the Senior Director for Worldwide Solutions Enablement and Revenue Management for Enterprise and HPC.  In this role, he is responsible for managing all strategic opportunities in Enterprise and HPC and managing and meeting revenue for the Enterprise and Government segment in Intel’s datacenter group. Dr. Palaniswamy leads a team that drives strategic opportunities worldwide (solutions, architecture, products, business frameworks, etc) in collaboration with Intel’s ecosystem partners.<br /><br />
+
+													His prior responsibilities at Intel included being the lead for worldwide business development and operations for Intel® Technical Computing Solutions, Intel® QuickAssist Technology based accelerators in HPC, and World Wide Web Consortium Advisory Committee representative from Intel. Prior to joining Intel as part of the acquisition of Conformative Systems, an XML Accelerator Company, he has served in several senior executive positions in the industry including being the Director of System Architecture at Conformative Systems, CTO/VP of Engineering at MSU Devices (a publicly traded company), and Director of Java Program Office and Wireless Software Strategy in the Digital Experience Group of Motorola, Inc.<br /><br />
+
+													Dr. Palaniswamy holds a B.S. in Electronics and Communications Engineering from Anna University (Chennai, India) and an M.S. and Ph.D. from the University of Cincinnati in Electrical and Computer Engineering.
+													</p>
+											</div>
+										</div>
+										<div class="hideAbove760">
+											<div class="col-lg-3">
+													<img src="../img/Avinash.jpg" class="avinashPic addMarginTopPic" alt="Dr. Nash Palaniswamy's Picture">
+											</div>
+											<div class="col-lg-9 desc">
+													<p class="styleFont fontType justified">
+														<span class="bold">Abstract: </span>Intel is investing in a broad set of technologies to move computing to the address the challenges of Exascale computing. These technologies are targeted to reach next generation performance in a configurable system that can achieve exceptional performance in data analytics, traditional high performance computing and artificial intelligence. Being able to address all of these application domains is of critical importance.<br /><br />
+
+														Intel is investing in processors, fabric, memory and software.  Each will be discussed along with their respective importance in achieving Exascale.<br />
+
+													<span class="bold"><br />Bio: </span>Dr. Nash Palaniswamy has been at Intel since October 2005, and focuses in the area of Enterprise and High Performance Computing in the Datacenter group. He is currently the Senior Director for Worldwide Solutions Enablement and Revenue Management for Enterprise and HPC.  In this role, he is responsible for managing all strategic opportunities in Enterprise and HPC and managing and meeting revenue for the Enterprise and Government segment in Intel’s datacenter group. Dr. Palaniswamy leads a team that drives strategic opportunities worldwide (solutions, architecture, products, business frameworks, etc) in collaboration with Intel’s ecosystem partners.<br /><br />
+
+													His prior responsibilities at Intel included being the lead for worldwide business development and operations for Intel® Technical Computing Solutions, Intel® QuickAssist Technology based accelerators in HPC, and World Wide Web Consortium Advisory Committee representative from Intel. Prior to joining Intel as part of the acquisition of Conformative Systems, an XML Accelerator Company, he has served in several senior executive positions in the industry including being the Director of System Architecture at Conformative Systems, CTO/VP of Engineering at MSU Devices (a publicly traded company), and Director of Java Program Office and Wireless Software Strategy in the Digital Experience Group of Motorola, Inc.<br /><br />
+
+													Dr. Palaniswamy holds a B.S. in Electronics and Communications Engineering from Anna University (Chennai, India) and an M.S. and Ph.D. from the University of Cincinnati in Electrical and Computer Engineering.
+													</p>
+											</div>
+										</div>
+									<div class="col-xs-12"><hr /></div>
+
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">11:45-12:15
+											</div>
+											<div class="col-xs-8 left-aligned">Overcoming Deployment and Configuration Challenges in High Performance Computing via Model-driven Engineering Technologies
+											</div>
+											<div class="col-xs-2 left-aligned">Aniruddha Gokhale, Vanderbilt University
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">11:45-12:15
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Overcoming Deployment and Configuration Challenges in High Performance Computing via Model-driven Engineering Technologies
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">Aniruddha Gokhale, Vanderbilt University
+											</div>
+									</div>
+									<div class="hideBelow760">
+											<div class="col-xs-3">
+													<img src="../img/Aniruddha.jpg" class="aniruddhaPic addMarginTopPic" alt="Aniruddha Picture">
+											</div>
+											<div class="col-xs-9 desc">
+													<p class="fontType justified">
+														<span class="bold">Abstract: </span>As systems scale in size and complexity, reasoning about their properties and controlling their behavior requires complex simulations, which often involves multiple interacting co-simulators that must be deployed and configured on high performance computing resources. Increasingly, cloud platforms which may even be federated, offer cost-effective solutions to realize such deployments. However, researchers and practitioners alike often face a plethora of challenges stemming from the need for rapid provisioning/deprovisioning, ensuring reliability, defining strategies for autoscaling against changing workloads, handling resource unavailabilities, and exploiting modern features such as GPUs, FPGAs, and NUMA architectures to name a few, for which they generally tend to lack the expertise to overcome these challenges. Model-driven engineering (MDE) offers significant promise to address these challenges by providing the users with intuitive abstractions and automating the deployment and configuration tasks. This talk describes our ongoing work in this space and will highlight both the MDE and systems solutions that we are investigating.<br />
+
+														<span class="bold"><br />Bio: </span>Dr. Aniruddha S. Gokhale is an Associate Professor in the Department of Electrical Engineering and Computer Science, and Senior Research Scientist at the Institute for Software Integrated Systems (ISIS) both at Vanderbilt University, Nashville, TN, USA. His current research focuses on developing novel solutions to emerging challenges in edge-to-cloud computing, real-time stream processing, and publish/subscribe systems as applied to cyber physical systems including smart transportation and smart cities. He is also working on using cloud computing technologies for STEM education. Dr. Gokhale obtained his B.E (Computer Engineering) from University of Pune, India, 1989; MS (Computer Science) from Arizona State University, 1992; and D.Sc (Computer Science) from Washington University in St. Louis, 1998. Prior to joining Vanderbilt, Dr. Gokhale was a member of technical staff at Lucent Bell Laboratories, NJ. Dr. Gokhale is a Senior member of both IEEE and ACM, and a member of ASEE. His research has been funded over the years by DARPA, DoD, industry and NSF including a NSF CAREER award in 2009.<br />
+													</p>
+											</div>
+										</div>
+										<div class="hideAbove760">
+												<div class="col-lg-3">
+														<img src="../img/Aniruddha.jpg" class="aniruddhaPic addMarginTopPic" alt="Aniruddha Picture">
+												</div>
+												<div class="col-lg-9 desc">
+														<p class="styleFont fontType justified">
+															<span class="bold">Abstract: </span>As systems scale in size and complexity, reasoning about their properties and controlling their behavior requires complex simulations, which often involves multiple interacting co-simulators that must be deployed and configured on high performance computing resources. Increasingly, cloud platforms which may even be federated, offer cost-effective solutions to realize such deployments. However, researchers and practitioners alike often face a plethora of challenges stemming from the need for rapid provisioning/deprovisioning, ensuring reliability, defining strategies for autoscaling against changing workloads, handling resource unavailabilities, and exploiting modern features such as GPUs, FPGAs, and NUMA architectures to name a few, for which they generally tend to lack the expertise to overcome these challenges. Model-driven engineering (MDE) offers significant promise to address these challenges by providing the users with intuitive abstractions and automating the deployment and configuration tasks. This talk describes our ongoing work in this space and will highlight both the MDE and systems solutions that we are investigating.<br />
+
+															<span class="bold"><br />Bio: </span>Dr. Aniruddha S. Gokhale is an Associate Professor in the Department of Electrical Engineering and Computer Science, and Senior Research Scientist at the Institute for Software Integrated Systems (ISIS) both at Vanderbilt University, Nashville, TN, USA. His current research focuses on developing novel solutions to emerging challenges in edge-to-cloud computing, real-time stream processing, and publish/subscribe systems as applied to cyber physical systems including smart transportation and smart cities. He is also working on using cloud computing technologies for STEM education. Dr. Gokhale obtained his B.E (Computer Engineering) from University of Pune, India, 1989; MS (Computer Science) from Arizona State University, 1992; and D.Sc (Computer Science) from Washington University in St. Louis, 1998. Prior to joining Vanderbilt, Dr. Gokhale was a member of technical staff at Lucent Bell Laboratories, NJ. Dr. Gokhale is a Senior member of both IEEE and ACM, and a member of ASEE. His research has been funded over the years by DARPA, DoD, industry and NSF including a NSF CAREER award in 2009.<br />
+														</p>
+												</div>
+											</div>
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">12:15-12:45
+											</div>
+											<div class="col-xs-8 left-aligned">The EX Factor in the Exascale Era: Factors driving changes in HPC
+											</div>
+											<div class="col-xs-2 left-aligned">Bharatkumar Sharma, Nvidia
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">12:15-12:45
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">The EX Factor in the Exascale Era: Factors driving changes in HPC
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">Bharatkumar Sharma, Nvidia
+											</div>
+									</div>
+									<div class="hideBelow760">
+											<div class="col-xs-3">
+													<img src="../img/Bharatkumar.jpg" class="speakersPic addMarginTopPic" alt="Takizawa Picture">
+											</div>
+									<div class="col-xs-9 desc">
+													<p class="fontType justified">
+														<span class="bold">Abstract: </span>GPU’s has been used to accelerate HPC algorithms which are based on first principles theory and are proven statistical models for accurate results in multiple science domains. This talk will provide insights into the HPC domain and how it affects the programs you write today and in the future in various domains.<br />
+
+														<span class="bold"><br />Bio: </span>Bharatkumar Sharma obtained master degree in Information Technology from Indian Institute of Information Technology, Bangalore. He has around 10 years of development and research experience in domain of Software Architecture, Distributed and Parallel Computing. He is currently working with Nvidia as a Senior Solution Architect, South Asia. He has published papers and journal articles in field of Parallel Computing and Software Architecture.<br />
+													</p>
+											</div>
+										</div>
+										<div class="hideAbove760">
+											<div class="col-lg-3">
+													<img src="../img/Bharatkumar.jpg" class="speakersPic addMarginTopPic" alt="Takizawa Picture">
+											</div>
+											<div class="col-lg-9 desc">
+													<p class="styleFont fontType justified">
+														<span class="bold">Abstract: </span>GPU’s has been used to accelerate HPC algorithms which are based on first principles theory and are proven statistical models for accurate results in multiple science domains. This talk will provide insights into the HPC domain and how it affects the programs you write today and in the future in various domains.<br />
+
+														<span class="bold"><br />Bio: </span>Bharatkumar Sharma obtained master degree in Information Technology from Indian Institute of Information Technology, Bangalore. He has around 10 years of development and research experience in domain of Software Architecture, Distributed and Parallel Computing. He is currently working with Nvidia as a Senior Solution Architect, South Asia. He has published papers and journal articles in field of Parallel Computing and Software Architecture.<br />
+													</p>
+											</div>
+										</div>-->
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-md-2">12:40 PM - 2:00 PM
+											</div>
+											<div class="col-md-8 center-aligned">LUNCH BREAK & NETWORKING (ICE-BREAKING SESSION)
+											</div>
+											<div class="col-md-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 redBackground styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">12:40 PM - 2:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">LUNCH BREAK & NETWORKING (ICE-BREAKING SESSION)
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">2:00 PM -2:30 PM
+											</div>
+											<div class="col-xs-8 left-aligned">Invited Talk-4
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">2:00 PM -2:30 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-4
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">2:30 PM -3:30 PM
+											</div>
+											<div class="col-xs-8 left-aligned">Hands-on Part-1, HPC topic
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">2:30 PM -3:30 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Hands-on Part-1, HPC topic
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-md-2">12:40 PM - 2:00 PM
+											</div>
+											<div class="col-md-8 center-aligned">COFFEE BREAK
+											</div>
+											<div class="col-md-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 redBackground styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">3:30 PM - 3:45 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">COFFEE BREAK
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">3:45 PM - 5:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned">Hands-on Part-2, HPC topic
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">3:45 PM - 5:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Hands-on Part-2, HPC topic
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">5:00 PM - 7:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned">NETWORKING RECEPTION & TEAM BUILDING EXERCISE
+											</div>
+											<div class="col-xs-2 left-aligned">TBD
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">5:00 PM - 7:00 PM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">NETWORKING RECEPTION & TEAM BUILDING EXERCISE
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+											</div>
+									</div>
+									<!--<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">13:45-14:50
+											</div>
+											<div class="col-xs-8 left-aligned"><ul class="noList">
+												<li><span class="bold">Neethi Suresh, Lois Thomas and Bipin Kumar, <i>"DNS for large domains: Challenges for computation and storage" </i></span></li>
+												<li><span class="bold"><br />Abstract: </span>Clouds play a very important role in modulating climate by controlling radiation received at the Earth surface. In spite of their importance, their dynamics are not well understood due to simulation limitations. The lack of understanding of the hydrodynamics and the micro-physical processes in clouds causes major uncertainties in current atmospheric general circulation models. Direct Numerical Simulation (DNS) is a three dimensional simulation approach to simulate turbulent flows at smallest scale where the equations are solved explicitly without any approximation. Running the DNS in bigger domain is compute intensive and lengthy. Hence, prior knowledge of the resources required to run DNS code can be of great advantage. A Numerical Simulation of entrainment and mixing process at cloud interface to study droplet dynamics has been carried out for smaller domains and the time to run code for bigger domain has been projected using linear regression formula. Projected time for bigger domain size will provide researcher to estimate the wall clock time as well as storage requirement, based on available computational resources, to run DNS. The simulation is carried out for different size domains and optimized number of cores has been suggested based on scaling factors for different domains. Further a 17% gain in computational time is achieved by amending algorithm, where only sparse operations are considered in place of full dense data. Use of pnetcdf library has also provided advantages over conventional I/O format.</li>
+												<li><span class="bold"><br />Presentation Slides: </span><br />
+												<a href="../slides/Neethi_Suresh_Slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">DNS for large domains: Challenges for computation and storage</a></li>
+												<li><hr class="rmBottomMargin"/></li>
+																										<li><span class="bold"><br />Manu Awasthi, <i>"DRAM Organization Aware OS Page Allocation"</i></span></li>
+
+
+																										<li><span class="bold"><br />Abstract: </span>The applications in HPC and datacenter domains are beginning to have increasingly larger memory footprints running into multiple tens of gigabytes. Contemporary HPC server also have multiple NUMA nodes and the NUMA factor is increasing at an alarming pace with the increase in number of NUMA nodes. As a result, the average cost of main memory access has also been increasing. Furthermore, for a typical HPC application, DRAM access latencies are a function of 1) the memory allocation policies of OS (across NUMA nodes) and 2) data layout in DRAM DIMMs (per-NUMA node).<br /><br />
+
+																										A DRAM DIMM has a hierarchical structure where it is divided into ranks, banks, rows and columns. There are multiple such DIMMs on each channel and there could be multiple channels emanating from one memory controller. Furthermore, there could be multiple memory controllers per NUMA node. Data layout across DRAM DIMMs and channels is a function of memory controller specific policies like address mapping schemes, which potentially can differ between multiple controllers on the same node.<br /><br />
+
+																										The OS allocates memory at the granularity of pages. Since the OS has no knowledge of the underlying architecture and organization of per-NUMA node DRAM, each OS page could potentially be concentrated to a subset of available channels, DIMMs, ranks, banks and arrays, putting them under pressure and reducing performance. In order to get most benefit out of existing architectures, it is necessary that the OS allocate memory (at page granularity) while being cognizant of the inner architecture and organization of per-NUMA node DRAM.<br /><br />
+
+																										In this proposal, we propose mechanisms where the OS, in addition to reducing memory allocation for processes across NUMA nodes, also takes into account the organization of DRAM DIMMs (channels, ranks, banks, rows, columns etc.) for every memory controller. This will help the OS make page allocation decisions which maximize the use of available parallelism, increase locality and hence reduce overall memory access latency, decreasing application runtimes.</li>
+
+																										<li><span class="bold"><br />Presentation Slides: </span><br />
+																										<a href="../slides/SCEC2017Final.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">DRAM Organization Aware OS Page Allocation</a></li>
+																										<li><hr class="rmBottomMargin"/></li>
+															    <li><br><span class="bold">Gouri Kadam and Shweta Nayak, <i>"Implementation of OpenSource Structural Engineering Application OpenSees on GPU platform"</span></i></li>
+
+																	<li><span class="bold"><br />Abstract: </span>GPU computing is emerging as an alternative to CPUs for throughput oriented applications because of their number of cores embedded on the same chip and speed-up in computing. GPUs provide general purpose computing using dedicated libraries such as CUDA (for NVIDIA cards, based on a SIMD architecture that makes it possible to handle a very large number of hardware threads concurrently, and can be used for various purposes. This paper explains customization of a well-known open source earthquake engineering application OpenSees on hybrid platform using GPU enabled open source libraries.<br /><br />
+
+																	Available GPU enabled version of OpenSees provided by Xinzheng Lu, Linlin Xie (Tsinghua University, China) uses CulaS4 and CulaS5, which use the Cula library and currently supported on window’s platform. Both of these limits the usage of OpenSees as an open source platform. To overcome this, we have modified existing CuSPSolver to use only freely available CUSP library. Speed up improvement is achieved by diverting analysis component to GPU architecture<br /><br />
+
+																	GPU enablement will help researchers and scientists to use this open-source platform for their research in structural and earthquake engineering domain using OpenSees. Also as there are minor changes required to be done in the input script and no great programming efforts required to run it using GPU enabled OpenSees, these modifications are very user friendly. Speedup around 2.14x is observed when tested with some examples. Different types of examples were studied to compare the results and it has been observed that performance will increases with increase in complexity of the problem. Nodal displacement results of one of the example were compared with CPU and GPU simulations which were matching. This validates the methodology used for GPU enablement. These modifications were also integrated in the mainstream of OpenSees code at Berkley and now available to all structural engineering community. All the study carried out is for single CPU and single GPU. There is lot of scope to extend this work for multi GPU, using other accelerators and using OpenCL.</li>
+
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/SCEC2017_GPU_OpenSees.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Implementation of OpenSource Structural Engineering Application OpenSees on GPU platform</a></li>
+																	<li><hr class="rmBottomMargin"/></li>
+																	<li><span class="bold"><br />Mangala N, Deepika H.V, Prachi Pandey and Shamjith K V, <i>"Adaptive Resource Allocation Technique for Exascale Systems"</i></span></li>
+																	<li><span class="bold"><br />Abstract:</span>The future exascale systems are expected to have numerous heterogeneous computing resources in order to achieve computational performance against the energy consumption guidelines.  To harness these computing resources it is essential to have hybrid applications that can exploit a combination of CPU and other accelerators for execution. To optimally exploit the cluster performance offered by the heterogeneous architecture, it is necessary to schedule the application based on their exhibited characteristics. However, scheduling hybrid parallel applications is a challenging task as a single resource allocation algorithm should be able to handle multiple aspects of heterogeneity, application characteristics and accelerators’ capabilities while ensuring to achieve optimal resource utilization and good response time to all the jobs. We propose a novel resource allocation technique which makes an in-depth logical scheduling decision based on multiple criteria - characterisation of the hybrid applications, energy conservation, and network topology with resource proximity for allocation. The knowledge of prior job execution is used to self evolve the optimal resource selection mechanism. A unique enhancement has been added in the scheduler to circumvent long waiting time by dynamically adapting applications to alternate resource through re-targeting the device at runtime. This technique helps to reduced waiting time for getting the required resource, and hence improves the turnaround time for the user.  The resource allocator considers the challenges of exascale scenario and orchestrates a solution to help HPC users to get their applications executed with less waiting time with better efficiency, and assures effective resource utilization from the HPC resource administrator’s perspective.</li>
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/Mangala_Slides.pptx" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Adaptive Resource Allocation Technique for Exascale Systems</a><br />
+																	</li>
+																	<li><hr class="rmBottomMargin"/></li>
+															    <li><span class="bold"><br />Shreya Bokare, Sanjay Pawar and Veena Tyagi.<i>"Network coded Storage I/O subsystem for HPC exascale applications"</i></span></li>
+
+																	<li><span class="bold"><br />Abstract: </span>Tremendous data growth in exascale HPC applications will generate variety of
+datasets. This will impose two important challenges on the storage I/O system i) efficiently
+process large data sets, ii) improved fault tolerance. The exascale storage systems are
+expected to be capable enough providing bandwidth guarantee and applying coding scheme
+optimized for the type of data set.<br /><br />
+Traditional RAID architecture in HPC storage system is being replaced with network coding
+techniques to provide optimal fault tolerance for data. There exists variation in network
+codes based on traditional erasure (reed-Solomon) with number of libraries
+implementations, which notably differ in terms of complexity and implementation for
+specific optimizations.<br /><br />
+We propose an I/O subsystem to provide bandwidth guarantee along with optimized fault
+tolerance for variety of HPC/big datasets. The proposed storage I/O subsystem consists of
+software defined storage gateways and controller working along with filesystem MDS. We
+propose an I/O caching mechanism with hierarchical storage structure embedded at storage
+gateway. The designed caching policy will cache smaller files on faster storage drives (like
+SSD’s) eliminating long access latency for smaller sized files. The storage gateways are
+running with systematic erasure (RS) code, with preconfigured encoding-decoding
+algorithms. At each gateway, network coding (erasure coding encode-decode) is performed
+at multiple tiers with specified parameter. Geometric programming is used to calculate
+parameters at each tier based on data demand. The proposed system provides bandwidth
+guarantee with caching mechanism at hierarchical storage layers. Flexible erasure coding
+provides optimized fault tolerance for variety of application datasets.<br /><br />
+Future work will focus on design of flexible caching and replacement policy for real time
+workload and an adaptive encode-decode algorithm for highly skewed data demand.
+																	</li>
+																	<li><span class="bold"><br />Presentation Slides: </span><a href="../slides/networkCodedStorageIO.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation"><br/>NETWORK CODED STORAGE I/O SUBSYSTEM FOR HPC EXASCALE APPLICATIONS</a></li>
+																	<li><hr class="rmBottomMargin"/></li>
+																	<li><span class="bold"><br />Manavalan R.<i>"Application level challenges and issues of processing different frequency, polarization and incidence angle Synthetic Aperture Radar data using distributed computing resources"</i></span></li>
+
+																	<li><span class="bold"><br />Abstract:</span>The role and need of Synthetic Aperture Radar (SAR) technology in various geospatial applications is proved beyond the doubts as SAR can make available critical information about on the filed information with centimeter to millimeter accuracy. The science of processing such SAR data using the distributed computing resources is more than two decade old and as of now been broadly bolstered by worldwide HPC labs for example, ESA’s G-POD (Grid Processing on Demand), Peppers (A Performance Emphasized Production Environment for Remote Sensing), DLR distributed SAR data processing environment, Center for Earth Observation and Digital Earth (CEODE) of Chinese Academy of Sciences (CAS),..etc. This paper discusses the difficulties and issues of Geospatial application users who are working with multiple sets of voluminous temporal SAR data and brings out the importance of developing and deploying all-purpose HPC based infrastructure environment that can meet the expectations of application users. Specific situations which require simultaneous processing of different frequency, polarization and incidence angle SAR data using the distributed HPC resources and related requirements will be discussed. For example during the SAR raw data processing, the need and importance of simultaneous processing and extraction of different polarization images as well as in completing its related post processing tasks and mapping operations will be highlighted. When the same has to be done at a regional scale, mainly to simulate large scale disaster events with various multi-look factors as well as with different post processing filtering options the need of developing and deploying such real time solutions on an exascale computing environment can be well understood. As on date such large scale complex SAR application model supporting the above mentioned expectations is yet to be developed. In line to this this talk will brings out the importance of prototyping such HPC based SAR data processing environment which can support the complete application cycle of real time regional disaster management simulations and its related operations. Any such operational setup certainly needs effective coordination of worldwide space agencies as well as distributed HPC labs.</li>
+
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/13DEC2017-CDACB-Manavaln-Slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">‘Application level’ challenges and issues of processing different frequency, polarization and incidence angle Synthetic Aperture Radar data using distributed computing resources</a><br />
+																	</li>
+																	<li><hr class="rmBottomMargin"/></li>
+																										<li><span class="bold"><br />Venkatesh Shenoi, Janakiraman S and Sandeep Joshi, <i> "Towards energy efficient numerical weather prediction Scalable algorithms and approaches"</i></span></li>
+
+																										<li><span class="bold"><br />Abstract: </span>The weather forecasting has a major impact on the society. The meteorologists have been using the
+numerical weather prediction models for the operation forecast for over several decades ever since
+Richardson's attempt towards numerical models for weather prediction. The weather codes have
+consumed a good portion of the computational power available in several supercomputing centers.
+This has led to the need to improve the computational efficiency of the codes/models to achieve
+better resolution moving towards the better accuracy of the forecasts. However, these large scale
+computations are possible only at the expense of the huge energy budget due to the increasing
+requirement of computational resources as well as the cooling infrastructure required to maintain
+them. But with the energy budget fixed at 20 MW it is even more challenging as we are compelled
+to move towards energy efficiency of the weather codes. We focus towards the spectral transform
+method as case study for this talk. This method has been in use in NCAR and ECMWF for the
+operational forecasts.<br /><br />
+
+In this talk, we shall discuss the basics of numerical weather predictions and move towards the test
+bed shallow water model to be solved by spectral transform method. The highlights of the approach
+with regard to algorithm, its scalability and improvements leading to the reduction in the
+computational complexity will be discussed. To conclude, some of the recent efforts on scaling up
+the solver for shallow water equations are discussed along with the glimpse of the ongoing efforts in
+the ESCAPE project. This talk is inspired by our project proposal on “Scalable algorithmic
+approach to spectral transform method” to be pursued under NSM, India.</li>
+
+																										<li><span class="bold"><br />Presentation Slides: </span><br />
+																										<a href="../slides/venkatesh_shenoi_slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Towards Energy Efficient Numerical Weather Prediction</a><br />
+																										</li>
+																										<li><hr class="rmBottomMargin"/></li>
+															    <li><br></li></ul>
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">14:50-15:10
+											</div>
+											<div class="col-xs-8 left-aligned">Narendra Karmarkar, VCV Rao, <i>"MPPLAB(E-Teacher)"</i>
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="hideBelow760">
+											<div class="col-xs-3">
+													<img src="../img/vcv.jpg" class="speakersPic addMarginTopPic" alt="VCV Rao Picture">
+											</div>
+									<div class="col-xs-9 desc">
+													<p class="fontType justified">
+														<span class="bold">Abstract: </span>HPC has huge future scope for scientific applications, large data bases, AI/deep learning, business applications in financial industry, telecom (particularly 5G) etc. Unfortunately, present systems are serving the market with separate products, in a rather fragmented manner. Challenge is to create a "Unified Architecture" that will unify the user space, following a "Top-down" approach instead of “Bottom-up" approach which forces applications to try to fit their code to peculiarities of particular cpu's, accelerators, system architecture etc. Today's potential of HPC and silicon technology is grossly underutilized due to effort and time spent in tailoring parallel code to specific machines.    Incorporation of FPGA-based reconfigurability in general applications is getting delayed unnecessarily. If economic benefits based on what is eminently feasible technologically, are not delivered to the society quickly enough, it slows down investments in further technological enhancements. All HPC users will benefit from this in the long run. At the same time, we are focusing on how very complex code can be put  together in shorter time-span, and in such a way that investment in top-level code design is long-lived in face of  anticipated changes in successive generations of chips, interfaces etc. Due to vast scope, we will present only a broad overview and elaborate only on couple of aspects.  Improving programmer productivity by designing and writing parallel code at multiple levels of abstraction by providing more expressive notations, tools for transforming one level to the next is required. It is also necessary to do away with artificial boundary between hardware description languages and how far traditional compilers reach starting from high level languages. This will ensure more seamless utilization of FPGA-based re-configurability in the unified system architecture. Since hardware aspects are too complex, only one particular aspect related to GPU's will be covered.  Initially, we’ll be addressing application of optimization algorithms to economic modelling and telecom systems.<br />
+
+														<span class="bold"><br />Bio: </span>VCV.Rao received his Master degree in Mathematics from Andhra University, India in 1985 and Ph.D degree in Mathematics from IIT-Kanpur in the year 1993. He is associated with C-DAC since 1993 on High Performance Computing projects. He contributed to design, develop and deploy  C-DAC’s PARAM Series of Supercomputers, GARUDA Grid Computing project, Parallel Computing workshops, contributed to PARAM series at premier academic Institutions. Currently, he is an Associate Director in the High-Performance Computing Technologies (HPC-Tech) Group, at C-DAC, Pune.<br />
+													</p>
+											</div>
+										</div>
+										<div class="hideBelow760">
+												<div class="col-xs-3">
+														<img src="../img/Narendra.jpg" class="speakersPic addMarginTopPic" alt="VCV Rao Picture">
+												</div>
+												<div class="col-xs-9 desc">
+														<p class="fontType justified">
+															<span class="bold"><br />Bio: </span>Karmarkar received his B.Tech in EE from IIT Bombay in 1978, M.S. from the California Institute of Technology in 1979 and Ph.D. in Computer Science from the University of California, Berkeley in 1983. He is well known for linear programming algorithms - a cornerstone in the field of Linear Programming. He is a Fellow of Bell Laboratories (1987 onwards). In 2006-2007, he served as scientific advisor to the Chairman Tata group, founded CRL and architected "EKA" system, which stands for "Embedded Karmarkar Algorithm”. Currently, he is a Consultant Chief Architect in C-DAC, Pune. He is also a distinguished visiting professor at several institutes such as IISc, and IITs.<br />
+														</p>
+												</div>
+											</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">13:45-14:50
+											</div>
+											<div class="col-xs-8 left-aligned"><ul class="noList">
+																										<li><span class="bold">Neethi Suresh, Lois Thomas and Bipin Kumar, <i>"DNS for large domains: Challenges for computation and storage" </i></span></li>
+																										<li><span class="bold"><br />Abstract: </span>Clouds play a very important role in modulating climate by controlling radiation received at the Earth surface. In spite of their importance, their dynamics are not well understood due to simulation limitations. The lack of understanding of the hydrodynamics and the micro-physical processes in clouds causes major uncertainties in current atmospheric general circulation models. Direct Numerical Simulation (DNS) is a three dimensional simulation approach to simulate turbulent flows at smallest scale where the equations are solved explicitly without any approximation. Running the DNS in bigger domain is compute intensive and lengthy. Hence, prior knowledge of the resources required to run DNS code can be of great advantage. A Numerical Simulation of entrainment and mixing process at cloud interface to study droplet dynamics has been carried out for smaller domains and the time to run code for bigger domain has been projected using linear regression formula. Projected time for bigger domain size will provide researcher to estimate the wall clock time as well as storage requirement, based on available computational resources, to run DNS. The simulation is carried out for different size domains and optimized number of cores has been suggested based on scaling factors for different domains. Further a 17% gain in computational time is achieved by amending algorithm, where only sparse operations are considered in place of full dense data. Use of pnetcdf library has also provided advantages over conventional I/O format.</li>
+																										<li><span class="bold"><br />Presentation Slides: </span><br />
+																										<a href="../slides/Neethi_Suresh_Slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">DNS for large domains: Challenges for computation and storage</a></li>
+																										<li><hr class="rmBottomMargin"/></li>
+																	<li><span class="bold"><br />Manu Awasthi, <i>"DRAM Organization Aware OS Page Allocation"</i></span></li>
+
+
+																	<li><span class="bold"><br />Abstract: </span>The applications in HPC and datacenter domains are beginning to have increasingly larger memory footprints running into multiple tens of gigabytes. Contemporary HPC server also have multiple NUMA nodes and the NUMA factor is increasing at an alarming pace with the increase in number of NUMA nodes. As a result, the average cost of main memory access has also been increasing. Furthermore, for a typical HPC application, DRAM access latencies are a function of 1) the memory allocation policies of OS (across NUMA nodes) and 2) data layout in DRAM DIMMs (per-NUMA node).<br /><br />
+
+																	A DRAM DIMM has a hierarchical structure where it is divided into ranks, banks, rows and columns. There are multiple such DIMMs on each channel and there could be multiple channels emanating from one memory controller. Furthermore, there could be multiple memory controllers per NUMA node. Data layout across DRAM DIMMs and channels is a function of memory controller specific policies like address mapping schemes, which potentially can differ between multiple controllers on the same node.<br /><br />
+
+																	The OS allocates memory at the granularity of pages. Since the OS has no knowledge of the underlying architecture and organization of per-NUMA node DRAM, each OS page could potentially be concentrated to a subset of available channels, DIMMs, ranks, banks and arrays, putting them under pressure and reducing performance. In order to get most benefit out of existing architectures, it is necessary that the OS allocate memory (at page granularity) while being cognizant of the inner architecture and organization of per-NUMA node DRAM.<br /><br />
+
+																	In this proposal, we propose mechanisms where the OS, in addition to reducing memory allocation for processes across NUMA nodes, also takes into account the organization of DRAM DIMMs (channels, ranks, banks, rows, columns etc.) for every memory controller. This will help the OS make page allocation decisions which maximize the use of available parallelism, increase locality and hence reduce overall memory access latency, decreasing application runtimes.</li>
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/SCEC2017Final.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">DRAM Organization Aware OS Page Allocation</a></li>
+																	<li><hr class="rmBottomMargin"/></li>
+															    <li><br><span class="bold">Gouri Kadam and Shweta Nayak, <i>"Implementation of OpenSource Structural Engineering Application OpenSees on GPU platform"</span></i></li>
+
+																	<li><span class="bold"><br />Abstract: </span>GPU computing is emerging as an alternative to CPUs for throughput oriented applications because of their number of cores embedded on the same chip and speed-up in computing. GPUs provide general purpose computing using dedicated libraries such as CUDA (for NVIDIA cards, based on a SIMD architecture that makes it possible to handle a very large number of hardware threads concurrently, and can be used for various purposes. This paper explains customization of a well-known open source earthquake engineering application OpenSees on hybrid platform using GPU enabled open source libraries.<br /><br />
+
+																	Available GPU enabled version of OpenSees provided by Xinzheng Lu, Linlin Xie (Tsinghua University, China) uses CulaS4 and CulaS5, which use the Cula library and currently supported on window’s platform. Both of these limits the usage of OpenSees as an open source platform. To overcome this, we have modified existing CuSPSolver to use only freely available CUSP library. Speed up improvement is achieved by diverting analysis component to GPU architecture<br /><br />
+
+																	GPU enablement will help researchers and scientists to use this open-source platform for their research in structural and earthquake engineering domain using OpenSees. Also as there are minor changes required to be done in the input script and no great programming efforts required to run it using GPU enabled OpenSees, these modifications are very user friendly. Speedup around 2.14x is observed when tested with some examples. Different types of examples were studied to compare the results and it has been observed that performance will increases with increase in complexity of the problem. Nodal displacement results of one of the example were compared with CPU and GPU simulations which were matching. This validates the methodology used for GPU enablement. These modifications were also integrated in the mainstream of OpenSees code at Berkley and now available to all structural engineering community. All the study carried out is for single CPU and single GPU. There is lot of scope to extend this work for multi GPU, using other accelerators and using OpenCL.</li>
+
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/SCEC2017_GPU_OpenSees.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Implementation of OpenSource Structural Engineering Application OpenSees on GPU platform</a></li>
+																	<li><hr class="rmBottomMargin"/></li>
+																	<li><span class="bold"><br />Mangala N, Deepika H.V, Prachi Pandey and Shamjith K V, <i>"Adaptive Resource Allocation Technique for Exascale Systems"</i></span></li>
+																	<li><span class="bold"><br />Abstract:</span>The future exascale systems are expected to have numerous heterogeneous computing resources in order to achieve computational performance against the energy consumption guidelines.  To harness these computing resources it is essential to have hybrid applications that can exploit a combination of CPU and other accelerators for execution. To optimally exploit the cluster performance offered by the heterogeneous architecture, it is necessary to schedule the application based on their exhibited characteristics. However, scheduling hybrid parallel applications is a challenging task as a single resource allocation algorithm should be able to handle multiple aspects of heterogeneity, application characteristics and accelerators’ capabilities while ensuring to achieve optimal resource utilization and good response time to all the jobs. We propose a novel resource allocation technique which makes an in-depth logical scheduling decision based on multiple criteria - characterisation of the hybrid applications, energy conservation, and network topology with resource proximity for allocation. The knowledge of prior job execution is used to self evolve the optimal resource selection mechanism. A unique enhancement has been added in the scheduler to circumvent long waiting time by dynamically adapting applications to alternate resource through re-targeting the device at runtime. This technique helps to reduced waiting time for getting the required resource, and hence improves the turnaround time for the user.  The resource allocator considers the challenges of exascale scenario and orchestrates a solution to help HPC users to get their applications executed with less waiting time with better efficiency, and assures effective resource utilization from the HPC resource administrator’s perspective.</li>
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/Mangala_Slides.pptx" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Adaptive Resource Allocation Technique for Exascale Systems</a><br />
+																	</li>
+																	<li><hr class="rmBottomMargin"/></li>
+															    <li><span class="bold"><br />Shreya Bokare, Sanjay Pawar and Veena Tyagi.<i>"Network coded Storage I/O subsystem for HPC exascale applications"</i></span></li>
+
+																	<li><span class="bold"><br />Abstract: </span>Tremendous data growth in exascale HPC applications will generate variety of
+datasets. This will impose two important challenges on the storage I/O system i) efficiently
+process large data sets, ii) improved fault tolerance. The exascale storage systems are
+expected to be capable enough providing bandwidth guarantee and applying coding scheme
+optimized for the type of data set.<br /><br />
+Traditional RAID architecture in HPC storage system is being replaced with network coding
+techniques to provide optimal fault tolerance for data. There exists variation in network
+codes based on traditional erasure (reed-Solomon) with number of libraries
+implementations, which notably differ in terms of complexity and implementation for
+specific optimizations.<br /><br />
+We propose an I/O subsystem to provide bandwidth guarantee along with optimized fault
+tolerance for variety of HPC/big datasets. The proposed storage I/O subsystem consists of
+software defined storage gateways and controller working along with filesystem MDS. We
+propose an I/O caching mechanism with hierarchical storage structure embedded at storage
+gateway. The designed caching policy will cache smaller files on faster storage drives (like
+SSD’s) eliminating long access latency for smaller sized files. The storage gateways are
+running with systematic erasure (RS) code, with preconfigured encoding-decoding
+algorithms. At each gateway, network coding (erasure coding encode-decode) is performed
+at multiple tiers with specified parameter. Geometric programming is used to calculate
+parameters at each tier based on data demand. The proposed system provides bandwidth
+guarantee with caching mechanism at hierarchical storage layers. Flexible erasure coding
+provides optimized fault tolerance for variety of application datasets.<br /><br />
+Future work will focus on design of flexible caching and replacement policy for real time
+workload and an adaptive encode-decode algorithm for highly skewed data demand.
+																	</li>
+																	<li><span class="bold"><br />Presentation Slides: </span><a href="../slides/networkCodedStorageIO.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation"><br/>NETWORK CODED STORAGE I/O SUBSYSTEM FOR HPC EXASCALE APPLICATIONS</a></li>
+																	<li><hr class="rmBottomMargin"/></li>
+																	<li><span class="bold"><br />Manavalan R.<i>"Application level challenges and issues of processing different frequency, polarization and incidence angle Synthetic Aperture Radar data using distributed computing resources"</i></span></li>
+
+																	<li><span class="bold"><br />Abstract:</span>The role and need of Synthetic Aperture Radar (SAR) technology in various geospatial applications is proved beyond the doubts as SAR can make available critical information about on the filed information with centimeter to millimeter accuracy. The science of processing such SAR data using the distributed computing resources is more than two decade old and as of now been broadly bolstered by worldwide HPC labs for example, ESA’s G-POD (Grid Processing on Demand), Peppers (A Performance Emphasized Production Environment for Remote Sensing), DLR distributed SAR data processing environment, Center for Earth Observation and Digital Earth (CEODE) of Chinese Academy of Sciences (CAS),..etc. This paper discusses the difficulties and issues of Geospatial application users who are working with multiple sets of voluminous temporal SAR data and brings out the importance of developing and deploying all-purpose HPC based infrastructure environment that can meet the expectations of application users. Specific situations which require simultaneous processing of different frequency, polarization and incidence angle SAR data using the distributed HPC resources and related requirements will be discussed. For example during the SAR raw data processing, the need and importance of simultaneous processing and extraction of different polarization images as well as in completing its related post processing tasks and mapping operations will be highlighted. When the same has to be done at a regional scale, mainly to simulate large scale disaster events with various multi-look factors as well as with different post processing filtering options the need of developing and deploying such real time solutions on an exascale computing environment can be well understood. As on date such large scale complex SAR application model supporting the above mentioned expectations is yet to be developed. In line to this this talk will brings out the importance of prototyping such HPC based SAR data processing environment which can support the complete application cycle of real time regional disaster management simulations and its related operations. Any such operational setup certainly needs effective coordination of worldwide space agencies as well as distributed HPC labs.</li>
+
+
+																	<li><span class="bold"><br />Presentation Slides: </span><br />
+																	<a href="../slides/13DEC2017-CDACB-Manavaln-Slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">‘Application level’ challenges and issues of processing different frequency, polarization and incidence angle Synthetic Aperture Radar data using distributed computing resources</a><br />
+																	</li>
+																	<li><hr class="rmBottomMargin"/></li>
+																										<li><span class="bold"><br />Venkatesh Shenoi, Janakiraman S and Sandeep Joshi, <i> "Towards energy efficient numerical weather prediction Scalable algorithms and approaches"</i></span></li>
+
+																										<li><span class="bold"><br />Abstract: </span>The weather forecasting has a major impact on the society. The meteorologists have been using the
+numerical weather prediction models for the operation forecast for over several decades ever since
+Richardson's attempt towards numerical models for weather prediction. The weather codes have
+consumed a good portion of the computational power available in several supercomputing centers.
+This has led to the need to improve the computational efficiency of the codes/models to achieve
+better resolution moving towards the better accuracy of the forecasts. However, these large scale
+computations are possible only at the expense of the huge energy budget due to the increasing
+requirement of computational resources as well as the cooling infrastructure required to maintain
+them. But with the energy budget fixed at 20 MW it is even more challenging as we are compelled
+to move towards energy efficiency of the weather codes. We focus towards the spectral transform
+method as case study for this talk. This method has been in use in NCAR and ECMWF for the
+operational forecasts.<br /><br />
+
+In this talk, we shall discuss the basics of numerical weather predictions and move towards the test
+bed shallow water model to be solved by spectral transform method. The highlights of the approach
+with regard to algorithm, its scalability and improvements leading to the reduction in the
+computational complexity will be discussed. To conclude, some of the recent efforts on scaling up
+the solver for shallow water equations are discussed along with the glimpse of the ongoing efforts in
+the ESCAPE project. This talk is inspired by our project proposal on “Scalable algorithmic
+approach to spectral transform method” to be pursued under NSM, India.</li>
+
+																										<li><span class="bold"><br />Presentation Slides: </span><br />
+																										<a href="../slides/venkatesh_shenoi_slides.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Towards Energy Efficient Numerical Weather Prediction</a><br />
+																										</li>
+																										<li><hr class="rmBottomMargin"/></li>
+																	<li><br></li></ul>
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">14:50-15:10
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Narendra Karmarkar, VCV Rao, <i>"MPPLAB(E-Teacher)"</i>
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="hideAbove760">
+										<div class="col-lg-3">
+												<img src="../img/vcv.jpg" class="speakersPic addMarginTopPic" alt="VCV Rao Picture">
+										</div>
+										<div class="col-lg-9 desc">
+												<p class="styleFont fontType justified">
+													<span class="bold">Abstract: </span>HPC has huge future scope for scientific applications, large data bases, AI/deep learning, business applications in financial industry, telecom (particularly 5G) etc. Unfortunately, present systems are serving the market with separate products, in a rather fragmented manner. Challenge is to create a "Unified Architecture" that will unify the user space, following a "Top-down" approach instead of “Bottom-up" approach which forces applications to try to fit their code to peculiarities of particular cpu's, accelerators, system architecture etc. Today's potential of HPC and silicon technology is grossly underutilized due to effort and time spent in tailoring parallel code to specific machines.    Incorporation of FPGA-based reconfigurability in general applications is getting delayed unnecessarily. If economic benefits based on what is eminently feasible technologically, are not delivered to the society quickly enough, it slows down investments in further technological enhancements. All HPC users will benefit from this in the long run. At the same time, we are focusing on how very complex code can be put  together in shorter time-span, and in such a way that investment in top-level code design is long-lived in face of  anticipated changes in successive generations of chips, interfaces etc. Due to vast scope, we will present only a broad overview and elaborate only on couple of aspects.  Improving programmer productivity by designing and writing parallel code at multiple levels of abstraction by providing more expressive notations, tools for transforming one level to the next is required. It is also necessary to do away with artificial boundary between hardware description languages and how far traditional compilers reach starting from high level languages. This will ensure more seamless utilization of FPGA-based re-configurability in the unified system architecture. Since hardware aspects are too complex, only one particular aspect related to GPU's will be covered.  Initially, we’ll be addressing application of optimization algorithms to economic modelling and telecom systems.<br />
+
+													<span class="bold"><br />Bio: </span>VCV.Rao received his Master degree in Mathematics from Andhra University, India in 1985 and Ph.D degree in Mathematics from IIT-Kanpur in the year 1993. He is associated with C-DAC since 1993 on High Performance Computing projects. He contributed to design, develop and deploy  C-DAC’s PARAM Series of Supercomputers, GARUDA Grid Computing project, Parallel Computing workshops, contributed to PARAM series at premier academic Institutions. Currently, he is an Associate Director in the High-Performance Computing Technologies (HPC-Tech) Group, at C-DAC, Pune.<br />
+												</p>
+										</div>
+									</div>
+									<div class="hideAbove760">
+										<div class="col-lg-3">
+												<img src="../img/Narendra.jpg" class="speakersPic addMarginTopPic" alt="VCV Rao Picture">
+										</div>
+										<div class="col-lg-9 desc">
+												<p class="styleFont fontType justified"><span class="bold"><br />Bio: </span>Karmarkar received his B.Tech in EE from IIT Bombay in 1978, M.S. from the California Institute of Technology in 1979 and Ph.D. in Computer Science from the University of California, Berkeley in 1983. He is well known for linear programming algorithms - a cornerstone in the field of Linear Programming. He is a Fellow of Bell Laboratories (1987 onwards). In 2006-2007, he served as scientific advisor to the Chairman Tata group, founded CRL and architected "EKA" system, which stands for "Embedded Karmarkar Algorithm”. Currently, he is a Consultant Chief Architect in C-DAC, Pune. He is also a distinguished visiting professor at several institutes such as IISc, and IITs.<br />
+												</p>
+										</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-xs-2">15:10-15:30
+											</div>
+											<div class="col-xs-8 center-aligned">COFFEE BREAK & NETWORKING
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont redBackground">
+											<div class="col-xs-2 paddingLeftEventTime">15:10-15:30
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">COFFEE BREAK & NETWORKING Talks
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2 hideBelow500">15:30-17:00
+											</div>
+											<div class="col-xs-8 left-aligned">Hands-on session: Using the Interactive Parallelization Tool (IPT) to Generate OpenMP, MPI, and CUDA Programs
+												<span class="bold"><br /><br />Abstract: </span>This talk will provide an overview of a high-productivity parallel programming tool known as the Interactive Parallelization Tool (IPT), which assists in efficiently parallelizing the existing C/C++ applications using any of the following parallel programming models: Message Passing Interface (MPI), OpenMP, and CUDA. For assisting in parallelization, IPT uses its knowledgebase of parallel programming expertise (encapsulated as design templates and rules), and relies on the specifications (i.e., what to parallelize and where) as provided by users. IPT can be used for the self-­paced learning of different parallel programming paradigms. It helps in understanding the differences in the structure and performance of the parallel code generated for different specifications while using the same serial application. A hands-on session on parallel programming using IPT will also be conducted.<br />
+												<span class="bold"><br />Presentation Slides: </span><br />
+												<a href="../slides/IPT_OMP_MPI_CUDA_SCEC17_final.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Using the Interactive Parallelization Tool to Generate Parallel Programs (OpenMP, MPI, and CUDA )</a><br />
+											</div>
+											<div class="col-xs-2 left-aligned">Ritu Arora, TACC
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">15:30-17:00
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Hands-on session: Using the Interactive Parallelization Tool (IPT) to Generate OpenMP, MPI, and CUDA Programs
+												<span class="bold"><br /><br />Abstract: </span>This talk will provide an overview of a high-productivity parallel programming tool known as the Interactive Parallelization Tool (IPT), which assists in efficiently parallelizing the existing C/C++ applications using any of the following parallel programming models: Message Passing Interface (MPI), OpenMP, and CUDA. For assisting in parallelization, IPT uses its knowledgebase of parallel programming expertise (encapsulated as design templates and rules), and relies on the specifications (i.e., what to parallelize and where) as provided by users. IPT can be used for the self-­paced learning of different parallel programming paradigms. It helps in understanding the differences in the structure and performance of the parallel code generated for different specifications while using the same serial application. A hands-on session on parallel programming using IPT will also be conducted.<br />
+												<span class="bold"><br />Presentation Slides: </span><br />
+												<a href="../slides/IPT_OMP_MPI_CUDA_SCEC17_final.pdf" class="submitPdf presentationSlides" target="_blank" title="PDF Presentation">Using the Interactive Parallelization Tool to Generate Parallel Programs (OpenMP, MPI, and CUDA )</a><br />
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">Ritu Arora, TACC
+											</div>
+									</div>
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">17:00-17:30
+											</div>
+											<div class="col-xs-8 left-aligned">Parallel programming contest (MPI/OpenMP/CUDA)  - parallelize programs with or without IPT - C/C++ as the base language - prizes for top contestants - The winner award is Nvidia Tesla K40C GPU
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">17:00-17:30
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">Parallel programming contest (MPI/OpenMP/CUDA)  - parallelize programs with or without IPT - C/C++ as the base language - prizes for top contestants - The winner award is Nvidia Tesla K40C GPU
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr /></div>
+									<div class="col-xs-12 hideBelow500">
+											<div class="col-xs-2">17:30-18:00
+											</div>
+											<div class="col-xs-8 left-aligned">"Global Preparedness for Exascale Computing", Moderator: Vipin Chaudhary. Panelists: Bharat Kumar, Hiroyuki Takizawa, Nash Palinaswamy, VCV Rao
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">17:30-18:00
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">"Global Preparedness for Exascale Computing", Moderator: Vipin Chaudhary. Panelists: Bharat Kumar, Hiroyuki Takizawa, Nash Palinaswamy, VCV Rao
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-xs-2">18:00-19:00
+											</div>
+											<div class="col-xs-8 center-aligned">NETWORKING RECEPTION AND PRIZE WINNER ANNOUNCED
+											</div>
+											<div class="col-xs-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 redBackground styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">18:00-19:00
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">NETWORKING RECEPTION AND PRIZE WINNER ANNOUNCED
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>-->
+
+									<div class="col-xs-12 hideAgendaTitle-md">
+											<div class="col-xs-1"></div>
+											<div class="col-xs-10">
+													<br /><br /><br />
+													<h1 class="bold"> Agenda on December 14, 2018 </h1>
+											</div>
+											<div class="col-xs-1"></div>
+									</div>
+									<div class="hideAgendaTitle-lg-sm1 hideAgendaTitle-lg-sm">
+											<br /><br /><br />
+											<h1 class="bold"> Agenda on December 14, 2018 </h1>
+									</div>
+									<div class="hideAgendaTitle-lg1 hideAgendaTitle-max477">
+											<br /><br /><br />
+											<h1 class="bold"> Agenda on December 14, 2018 <br /></h1>
+									</div>
+									<div class="hideAgendaTitle-min477 hideAgendaTitle-max399">
+											<br /><br /><br />
+											<h2 class="bold"> Agenda on December 14, 2018 <br /></h1>
+									</div>
+									<div class="hideAgendaTitle-min399">
+											<br /><br /><br />
+											<h4 class="bold"> Agenda on December 14, 2018 <br /></h1>
+									</div>
+									<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2 bold">Time
+										</div>
+										<div class="col-xs-8 bold left-aligned">Topic
+										</div>
+										<div class="col-xs-2 bold left-aligned">Speaker
+										</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 styleFont1">
+											<div class="col-xs-2 bold paddingLeftEventTime">Time
+											</div>
+											<div class="col-xs-8 bold left-aligned paddingLeftEventTitle">Topic
+											</div>
+											<div class="col-xs-2 bold left-aligned paddingLeftSpeaker">Speaker
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+									<div class="col-xs-12 hideBelow500 redBackground">
+											<div class="col-md-2">09:15 AM - 09:50 AM
+											</div>
+											<div class="col-md-8 center-aligned">NETWORKING OVER TEA/COFFEE
+											</div>
+											<div class="col-md-2 left-aligned">
+											</div>
+									</div>
+									<div class="col-xs-12 hideAbove500 redBackground styleFont">
+											<div class="col-xs-2 paddingLeftEventTime">09:15 AM - 09:50 AM
+											</div>
+											<div class="col-xs-8 left-aligned paddingLeftEventTitle">NETWORKING OVER TEA/COFFEE
+											</div>
+											<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+											</div>
+									</div>
+									<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">09:50 AM - 10:00 AM
+										</div>
+										<div class="col-xs-8 left-aligned">Opening Remarks
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">09:50 AM - 10:00 AM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Opening Remarks
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr /></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">10:00 AM - 10:30 AM
+										</div>
+										<div class="col-xs-8 left-aligned">Invited Talk-5
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">10:00 AM - 10:30 AM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-5
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr /></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">10:30 AM - 11:00 AM
+										</div>
+										<div class="col-xs-8 left-aligned">Invited Talk-6
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">10:30 AM - 11:00 AM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Invited Talk-6
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr /></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">11:00 AM - 11:45 AM
+										</div>
+										<div class="col-xs-8 left-aligned">Three Paper Presentations
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">11:00 AM - 11:45 AM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Three Paper Presentations
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+							<div class="col-xs-12 hideBelow500 redBackground">
+									<div class="col-md-2">11:45 AM - 12:00 PM
+									</div>
+									<div class="col-md-8 center-aligned">COFFEE BREAK
+									</div>
+									<div class="col-md-2 left-aligned">
+									</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 redBackground styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">11:45 AM - 12:00 PM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">COFFEE BREAK
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+									</div>
+							</div>
+							<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">12:00 PM - 1:00 PM
+										</div>
+										<div class="col-xs-8 left-aligned">Multiple lightning talks and paper presentations
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">12:00 PM - 01:00 PM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Multiple lightning talks and paper presentations
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr class="rmBottomMargin"/></div>
+							<div class="col-xs-12 hideBelow500 redBackground">
+									<div class="col-md-2">1:00 PM - 2:00 PM
+									</div>
+									<div class="col-md-8 center-aligned">LUNCH, NETWORKING, and GROUP PHOTO
+									</div>
+									<div class="col-md-2 left-aligned">
+									</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 redBackground styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">1:00 PM - 2:00 PM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">LUNCH, NETWORKING, and GROUP PHOTO
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">
+									</div>
+							</div>
+							<div class="col-xs-12"><hr class="rmTopMargin"/></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">2:00 PM - 5:00 PM
+										</div>
+										<div class="col-xs-8 left-aligned">Bring Your Own Code (BYOC)/Team Project
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">2:00 PM - 5:00 PM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">Bring Your Own Code (BYOC)/Team Project
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr /></div>
+							<div class="col-xs-12 hideBelow500">
+										<div class="col-xs-2">5:00 PM - 7:00 PM
+										</div>
+										<div class="col-xs-8 left-aligned">DINNER (Self-Paid)
+										</div>
+										<div class="col-xs-2 left-aligned">TBD
+										</div>
+							</div>
+							<div class="col-xs-12 hideAbove500 styleFont">
+									<div class="col-xs-2 paddingLeftEventTime">5:00 PM - 7:00 PM
+									</div>
+									<div class="col-xs-8 left-aligned paddingLeftEventTitle">DINNER (Self-Paid)
+									</div>
+									<div class="col-xs-2 left-aligned paddingLeftSpeaker">TBD
+									</div>
+							</div>
+							<div class="col-xs-12"><hr /></div>
+								</div>
+							</div>
+						</div>
+
+  <a name="datesOption"></a>
+	<div class="topicsSec onlyBorder">
+    <div class="container-fluid theDate fontType">
+        <div class="theBorder container">
+					<br />
+      <h3 class="bold">Tentative Deadlines for Papers</h3>
+        <ul class="noList">
+         <li>Call for papers and the advertisement of the availability of the participation grant: September 1, 2018</li>
+         <li>Paper submission deadline: October 1, 2018</li>
+         <li>Notifications of acceptance/rejection sent by: October 21, 2018</li>
+         <li>Camera-ready copies of the papers due on: October 31, 2018</li>
+         <li>Registration for the workshop to be completed by: November 25, 2018</li>
+        </ul>
+        <br/>
+				<h3 class="bold">Tentative Deadlines for Participation Grant for U.S. Based Students</h3>
+	        <ul class="noList">
+	         <li>Application deadline for the participation grant: September 15, 2018</li>
+	         <li>Notification of acceptance of participation grant to be sent by: October 2, 2018</li>
+	         <li>Hotel and flight reservations to be completed by: October 15, 2018</li>
+	         <li>The workshop participants arrive in New Delhi, India by: December 12, 2018</li>
+	        </ul>
+				<br/>
+    </div>
+  </div>
+</div>
+
+
+<a name="photosOption"></a>
+		<div class="onlyBorder3 photosSection">
+			<div class="container-fluid topicsSec">
+					<div class="theBorder container">
+						<h1 class="bold photoTitle">Photos from SCEC17</h2><br />
+							<div class="col-xs-2"></div>
+					<div class="col-xs-8 hideBelow1200"><a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<img id="thePicture" class="photos" src="../img/photos/1.JPEG">
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="col-xs-8 hideAgendaTitle-md hideAbove1201"><a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<img id="thePicture" class="photos" src="../img/photos/1.JPEG">
+<a class="next1" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="col-xs-12 addMargin hideAgendaTitle-lg-sm hideAgendaTitle-lg-sm1"><a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<img id="thePicture" class="photos" src="../img/photos/1.JPEG">
+<a class="next3" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="col-xs-8 hideAgendaTitle-lg1"><a class="prev4" onclick="plusSlides(-1)">&#10094;</a>
+	<img id="thePicture" class="photos1" src="../img/photos/1.JPEG">
+<a class="next4" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div class="col-xs-2"></div>
+		</div></div></div>
+
+
+ <div class="row row1">
+<div class="col-md-6 backgroundBlue">
+  <a name="committeeOption"></a>
+  <div class="container-fluid thecommitte theCommitte992Above hideAgendaTitle-md">
+       <h2 class="bold">Committee</h2><br />
+        <h4 class="bold">Organizing Committee</h4>
+        <ul class="noList">
+          <!--<li><a href="https://www.tacc.utexas.edu/about/directory/ritu-arora" class="none">Ritu Arora</a>,<a href="https://www.tacc.utexas.edu" class="none">Texas Advanced Computing Center, USA</a></li>-->
+          <li>Amitava Majumdar, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA (General Chair)</li>
+					<li>Ritu Arora, Texas Advanced Computing Center (TACC), UT Austin, Austin, USA (General Chair)</li>
+					<li>Sharda Dixit, Center of Development of Advanced Computing (CDAC), Pune, India (Program Co-Chair)</li>
+					<li>Anil Kumar Gupta, CDAC, Pune, India (Program Co-Chair)</li>
+					<li>Vinai Kumar Singh, Indraprastha Engineering College, Ghaziabad, India (Logistics and Finance Chair)</li>
+					<li>Manu Awasthi, IIT-Gandhinagar, Gandhinagar, India (Communications Co-Chair)</li>
+					<li>Vinodh Kumar Markapuram,  CDAC, Pune, India</li>
+        </ul>
+         <br />
+				 <h4 class="bold">Technical Program Committee</h4>
+         <ul class="noList">
+          <li>Amitava Majumdar, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA</li>
+          <li>Anil Kumar Gupta, CDAC, Pune, India</li>
+					<li>Anirban Jana, Pittsburgh Supercomputing Center (PSC), Pittsburg, USA</li>
+					<li>Antonio Gomez, Intel, Portland, USA</li>
+					<li>Amerjeet Sharma,  CDAC, Pune, India</li>
+					<li>Damon McDougall, Texas Advanced Computing Center (TACC), UT Austin, Austin, USA</li>
+					<li>Dinesh Rajagopal, BULL/AtoS, Bangalore, India</li>
+					<li>Galen Arnold, National Center of Supercomputing Applications, Illinois, USA</li>
+					<li>Lars Koesterke, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+					<li>Manu Awasthi, IIT-Gandhinagar, Gandhinagar, India</li>
+					<li>Purushotham Bangalore, University of Alabama at Birmingham, Alabama, USA</li>
+					<li>Robert Sinkovits, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA</li>
+					<li>Sandeep Joshi, CDAC, Pune, India</li>
+					<li>Sharda Dixit, Center of Development of Advanced Computing (CDAC), Pune, India</li>
+					<li>Si Liu, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+					<li>Soham Ghosh, Intel, India</li>
+					<li>Sukrit Sondhi, Fulcrum Worldwide, NJ, USA</li>
+					<li>Venkatesh Shenoi, CDAC, Pune, India</li>
+					<li>Victor Eijkhout, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+					<li>Vinai Kumar Singh, Indraprastha Engineering College, Ghaziabad, India</li>
+
+         </ul>
+
+				<br /><h4 class="bold">Webmaster</h4>
+				<ul class="noList">
+				 <li>Gerald Joshua, Texas Advanced Computing Center, USA</li>
+				</ul>
+    </div>
+		<div class="container-fluid thecommitte theCommitte992Below hideAgendaTitle-lg-sm">
+			<h2 class="bold">Committee</h2><br />
+			 <h4 class="bold">Organizing Committee</h4>
+			 <ul class="noList">
+				 <!--<li><a href="https://www.tacc.utexas.edu/about/directory/ritu-arora" class="none">Ritu Arora</a>,<a href="https://www.tacc.utexas.edu" class="none">Texas Advanced Computing Center, USA</a></li>-->
+				 <li>Amitava Majumdar, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA (General Chair)</li>
+				 <li>Ritu Arora, Texas Advanced Computing Center (TACC), UT Austin, Austin, USA (General Chair)</li>
+				 <li>Sharda Dixit, Center of Development of Advanced Computing (CDAC), Pune, India (Program Co-Chair)</li>
+				 <li>Anil Kumar Gupta, CDAC, Pune, India (Program Co-Chair)</li>
+				 <li>Vinai Kumar Singh, Indraprastha Engineering College, Ghaziabad, India (Logistics and Finance Chair)</li>
+				 <li>Manu Awasthi, IIT-Gandhinagar, Gandhinagar, India (Communications Co-Chair)</li>
+				 <li>Vinodh Kumar Markapuram,  CDAC, Pune, India</li>
+			 </ul>
+				<br />
+				<h4 class="bold">Technical Program Committee</h4>
+				<ul class="noList">
+				 <li>Amitava Majumdar, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA</li>
+				 <li>Anil Kumar Gupta, CDAC, Pune, India</li>
+				 <li>Anirban Jana, Pittsburgh Supercomputing Center (PSC), Pittsburg, USA</li>
+				 <li>Antonio Gomez, Intel, Portland, USA</li>
+				 <li>Amerjeet Sharma,  CDAC, Pune, India</li>
+				 <li>Damon McDougall, Texas Advanced Computing Center (TACC), UT Austin, Austin, USA</li>
+				 <li>Dinesh Rajagopal, BULL/AtoS, Bangalore, India</li>
+				 <li>Galen Arnold, National Center of Supercomputing Applications, Illinois, USA</li>
+				 <li>Lars Koesterke, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+				 <li>Manu Awasthi, IIT-Gandhinagar, Gandhinagar, India</li>
+				 <li>Purushotham Bangalore, University of Alabama at Birmingham, Alabama, USA</li>
+				 <li>Robert Sinkovits, San Diego Supercomputing Center (SDSC), UC San Diego, La Jolla, USA</li>
+				 <li>Sandeep Joshi, CDAC, Pune, India</li>
+				 <li>Sharda Dixit, Center of Development of Advanced Computing (CDAC), Pune, India</li>
+				 <li>Si Liu, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+				 <li>Soham Ghosh, Intel, India</li>
+				 <li>Sukrit Sondhi, Fulcrum Worldwide, NJ, USA</li>
+				 <li>Venkatesh Shenoi, CDAC, Pune, India</li>
+				 <li>Victor Eijkhout, Texas Advanced Computing Center, UT Austin, Austin, USA</li>
+				 <li>Vinai Kumar Singh, Indraprastha Engineering College, Ghaziabad, India</li>
+
+				</ul>
+
+			 <br /><h4 class="bold">Webmaster</h4>
+			 <ul class="noList">
+				<li>Gerald Joshua, Texas Advanced Computing Center, USA</li>
+			 </ul>
+		 </div>
+ </div>
+<div class="col-md-6 marginLeft">
+  <a name="sponsorsOption"></a>
+	<br />
+      <div class="container-fluid marginSponsors hidemax376">
+      <h2 class="bold curSponsorTitle">Current Sponsors</h2>
+				<div class="row nsfLogoWrapper">
+					<a href="https://www.nsf.gov/" target="_blank">
+						<img src="../img/nsf.jpg" class="nsfLogoOnSponsors" alt="NSF Logo">
+					</a>
+				</div>
+				<br />
+				<!--<div class="row"><div class="col-xs-6"><a href="http://www.nvidia.com/" target="_blank"><img src="../img/NVLogo_2D.jpg" class="nvidiaLogo" alt="intel"></a></div></div><br />-->
+				<div class="row">
+        <a href="https://www.cdac.in/" target="_blank"><div class="col-xs-1 sponsorMargin1"><img class="sponsorLogos" src="../img/cdac-logo.jpg"></div></a>
+				<a href="http://www.sdsc.edu/" target="_blank"><div class="col-xs-1 sponsorMargin"><img class="sponsorLogos" src="../img/sdsc.jpg"></div></a>
+        <a href="https://www.tacc.utexas.edu/" target="_blank"><div class="col-xs-1 sponsorMargin"><img class="sponsorLogos" src="../img/tacc.jpg"></div></a>
+				</div><br />
+		</div>
+		<div class="container-fluid marginSponsors hidemin376">
+		<h2 class="bold curSponsorTitle">Current Sponsors</h2>
+			<div class="row intelLogoWrapper-sm"><a href="https://www.intel.com/" target="_blank"><img src="../img/intel.jpg" class="intelLogoOnSponsors-sm" alt="intel"></a></div><br />
+			<div class="row"><div class="col-xs-6"><a href="http://www.nvidia.com/" target="_blank"><img src="../img/NVLogo_2D.jpg" class="nvidiaLogo" alt="nvidia"></a></div></div><br />
+			<div class="row">
+			<div class="row"><div class="col-xs-6"><a href="https://www.cdac.in/" target="_blank"><img class="sponsorsLogo-sm" src="../img/cdac-logo.jpg"></div></div></a>
+			<div class="row"><div class="col-xs-6"><a href="https://www.nsf.gov/" target="_blank"><img class="sponsorsLogo-sm" src="../img/nsf.jpg"></div></div></a>
+			<div class="row"><div class="col-xs-6"><a href="https://nsmindia.in/" target="_blank"><img class="sponsorsLogo-sm" src="../img/nsm.jpg"></div></div></a>
+			<div class="row"><div class="col-xs-6"><a href="https://www.tacc.utexas.edu/" target="_blank"><img class="sponsorsLogo-sm" src="../img/tacc.jpg"></div></div></a>
+			</div><br />
+	</div>
+
+		  <div class="container-fluid">
+      <h2 class="bold">Sponsorship Levels</h2>
+      <ul class="noList fontType justified">
+      <li><span class="bold"><u>Platinum Level:</u></span><br />
+				US $7000, one speaker-slot, large-sized logo in the header area of the website, name displayed prominently on the signage in workshop area,
+				promotion through workshop advertisements, five complimentary registrations, URL to the sponsor website added to the workshop website,
+				up to five products and services highlighted through blogs on the workshop forum page, invitation on a panel
+			</li>
+      <li><span class="bold"><u>Gold Level:</u></span> <br />
+				US $5000, medium-sized logo on the website, signage in workshop area, promotion through workshop advertisements,
+				up to three products and services highlighted through blogs on the workshop forum page, invitation on a panel,
+				three complimentary registrations
+			</li>
+      <li><span class="bold"><u>Silver Level:</u></span> <br />
+				US $3000, logo on the website, promotion through workshop advertisements,
+				one product or service highlighted through a blog on the workshop forum page, two complimentary registrations
+				</li>
+      <li><span class="bold"><u>Bronze Level:</u></span> <br />
+				US $2000, logo on the website, promotion through workshop advertisements, one complimentary registration
+				 </li>
+      </ul>
+     </div>
+	 </div></div>
+
+</div>
+<a name="CFAOption"></a>
+<div class="col-md-12 onlyBorder2">
+<div class="theBorder container marginTop">
+			<h3 class="bold makeItCenter">CFA (Call For Abstracts)</h3>
+			<br />
+			<center><h4>TBD</h4></center>
+			<!--<p class="fontType justified"> The SCEC workshop will include a track for lightning talks during which ten-minute talks will be presented in a sequence. The talks will provide a high-level overview of the topics that are aligned with the theme of the workshop. While the time allocated for the lightening talks may not be enough for presenting the fine details of the chosen topic, it could be enough for including key information that piques the interest of the audience for an engaging discussion after the talk. The abstract and slides of the talks will be published on the workshop website. There can be multiple authors on a submission but only one presenter is permitted for each lightning talk due to time-constraints.
+<br/><br/><b>Guidelines for preparing the submission for the lightning talk are as follows:</b><br /><br />
+In maximum 300 words, the abstract should answer the following questions on a topic that is relevant to the workshop:<br /></p>
+<ul class="noList fontType justified">
+<li><span class="bold">• What is the software challenge/problem that is being solved?</span></li>
+<li><span class="bold">• Why is this challenge/problem important to the HPC and/or the advanced software engineering community?</li>
+<li><span class="bold">• If applicable, who will benefit from the software/approach?</span></li>
+<li><span class="bold">• If applicable, what is the novelty of the software/approach?</span></li>
+<li><span class="bold">• If applicable, how do the preliminary results compare to those of the related work?</span></li>
+</ul><br />
+<p class="fontType justified">A rough draft of the proposed presentation (up to 5 slides) should also be submitted along with the abstract.
+The abstracts and the slides must be submitted in the PDF format through the submission system at the following URL: <a href="https://easychair.org/conferences/?conf=scec17" target="_blank" class="submitPdf hideAgendaTitle-max399" title="Submit PDF">https://easychair.org/conferences/?conf=scec17
+</a><a href="https://easychair.org/conferences/?conf=scec17" target="_blank" class="submitPdf hideAgendaTitle-min399 styleFont2" title="Submit PDF">https://easychair.org/conferences/?conf=scec17
+</a></p>
+<span class="abstract">*</span>Abstracts will not be accepted over email. Abstracts which are incomplete or received after the deadline will not be considered. The submission system will close on <b>November 20, 2017</b>.
+	<p><br/><span class="bold fontType">Presentation guidelines:</p class="fontType">
+Lightning talk presentations are limited to one per speaker. Co-authors are not included in this rule. A person can be a co-author on any number of abstracts.</p>
+--></div></div>
+
+
 <div class="col-md-12 onlyBorder">
 <a name="registrationOption"></a>
 <div class="theBorder container marginTop">
       <h3 class="bold makeItCenter"> Registration</h3>
 
-      <p class="fontType"> The registration fees for the workshop is Rupees 5000 (about US $75) for the participants from the Indian government organizations and the academia. The registration fees for the U.S. particpants and the particpants from the industry is US $250. The fees can be <b><u>paid online or at the venue</u></b> using cash or credit/debit card. All the workshop attendees should register in advance by filling the registration form whose link is provided below. </p>
-			<div class="makeItCenter">
-			<a href="https://goo.gl/forms/exqxwwtq4MJKZZHw1" target="_blank" class="btn btn-lg" title="Registration"> Registration Form
-			</a>
-				<br></br>
-			<p> We are happy to announce that the National Science Foundation (NSF) has made available some funds for covering the workshop participation cost for a limited number of undergraduate/graduate students from the U.S. institutions. If you are interested in applying for this participation grant, please submit the following form by September 16, 2018:
-			<a href="https://goo.gl/forms/SaVwz23puHRt2Ztf2" target="_blank" class="btn btn-lg" title="Application for Participation Grant"> Participation Grant
-			</a>
-	                </div><hr style="height:2px;border:none;color:#333;background-color:#333;"/>
-				
-			<p class="fontType">  <h3 class="bold makeItCenter"> Workshop Venue</h3> <div class="makeItCenter fontType"><h4>Hotel TBD</h4>Delhi, India</div></p>
+      <!--<p class="fontType"> The registration fees for the workshop is Rupees 1000 (US $16) and can be <b><u>paid at the venue</u></b> using cash or credit/debit card. <b> With the support of our sponsors, we are able to waive off the fee for a selected number of particpants who are registered by December 7, 2017</b>. For requesting the fee waiver, please send an email at "scecforum@gmail.com" with the subject line "Registration Fee Waiver" and let us know how the fee waiver will help you. All the workshop attendees should register in advance by filling the following form: </p>
+			--><div class="makeItCenter">
+			<a href="https://goo.gl/forms/6ejPJlNmBAr8gc292" target="_blank" class="btn btn-lg" title="Registration"> Registration Form
+			</a></div><hr style="height:2px;border:none;color:#333;background-color:#333;"/>
+			<p class="fontType">  <h3 class="bold makeItCenter"> Workshop Venue</h3> <div class="makeItCenter fontType"><h4>Delhi, India</div></p>
   </div></div>
 
 <div class="col-md-12">
@@ -184,31 +1453,56 @@
 		$(function () {
 			  $(document).scroll(function () {
 				    var fixedTopNavBar = $("#navbarTop");
-						var intelLogoTop = $("#theIntelLogo");
+						var nsfLogoTop = $("#theNsfLogo");
 				    fixedTopNavBar.toggleClass('scrolled', $(this).scrollTop() > fixedTopNavBar.height());
 						if($(this).scrollTop() > fixedTopNavBar.height()){
-								intelLogoTop.css("width", "5em");
-								intelLogoTop.css("height", "3em");
+								nsfLogoTop.css("width", "3em");
+								nsfLogoTop.css("height", "3em");
+								nsfLogoTop.css("margin-left", "2em");
 						}
 						else{
-								intelLogoTop.css("width", "7.5em");
-								intelLogoTop.css("height", "5em");
+								nsfLogoTop.css("width", "5em");
+								nsfLogoTop.css("height", "5em");
+								nsfLogoTop.css("margin-left", "1em");
 						}
+
 			  });
 		});
+
 		//Navigate which option users click
 		$("#navbarTop").each(function(){
 				$("li").click(function(){
 						scrollToAnchor(this.id);
 				});
 		});
+
 		//Scroll to the section that users are interested in
 		function scrollToAnchor(theName){
 		    var aTag = $("a[name='"+ theName +"']");
 		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 		}
-		
-		
+
+		//Change the slideshow picture
+		let count = 1;
+		function plusSlides(pointer){
+				if(pointer == 1)
+					count++;
+				else
+					count--;
+
+				if(count == 68)
+					count = 1;
+				else if(count == -1)
+					count = 67;
+
+				if(count >= 41 && count <= 67)
+					var url = "../img/photos/"+count.toString()+".jpeg";
+				else{
+					var url = "../img/photos/"+count.toString()+".JPEG";
+				}
+
+				$("#thePicture").attr("src",url);
+		}
   	</script>
 </body>
 </html>

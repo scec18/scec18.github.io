@@ -1,4 +1,3 @@
-
 *{
   margin:0;
   padding:0;
@@ -181,14 +180,15 @@
   left: 2em;
 }
 
-.intelLogo1 {
-  width: 4em;
+.navbarNsfLogo-sm {
+  width: 3em;
   height: 3em;
 }
 
-.intelLogo {
-  width: 7.5em;
+.navbarNsfLogo {
+  width: 5em;
   height: 5em;
+  margin-left: 1em;
   transition-duration: 0.9s;
 }
 
@@ -196,9 +196,9 @@
   width:
 }
 
-.intelLogoOnSponsors {
-  width: 20em;
-  height: 20em;
+.nsfLogoOnSponsors {
+  width: 15em;
+  height: 15em;
 }
 
 .intelLogoOnSponsors-sm {
@@ -206,9 +206,8 @@
   height: 15em;
 }
 
-.intelLogoWrapper {
-  margin-bottom: -6.2em;
-  margin-top: -1.7em;
+.nsfLogoWrapper {
+  margin-top: 5em;
 }
 
 .intelLogoWrapper-sm {
@@ -514,7 +513,7 @@ a:hover {
 }
 
 .theCommitte992Above {
-  padding-bottom: 19em;
+  padding-bottom: 4em;
 }
 
 .theCommitte992Below {
@@ -534,7 +533,7 @@ a:hover {
 
 .date{
     width:200px;
-    padding-top: 10px;
+    padding-top: 2em;
     float: left;
     margin-right: 8px;
 }
@@ -572,7 +571,7 @@ a:hover {
 }
 
 .location {
-  padding-top: 1px;
+  padding-top: 1.3em;
   float: left;
   margin-left: 20px;
   width: 205px;
@@ -619,7 +618,7 @@ a:hover {
 
 .sponsorLogos {
   height: 5em;
-  width: 5.7em;
+  width: 9em;
 }
 
 .workshop {
@@ -641,12 +640,12 @@ a:hover {
 }
 
 .sponsorMargin1 {
-    margin-right: 50px;
+    margin-right: 6em;
 }
 
 .sponsorMargin {
-  margin-right: 50px;
-  margin-left: 10px;
+  margin-right: 6em;
+  margin-left: 1em;
 }
 
 .sponsorTACC {
