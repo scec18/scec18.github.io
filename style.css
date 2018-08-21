@@ -180,15 +180,14 @@
   left: 2em;
 }
 
-.navbarNsfLogo-sm {
+.navbarLogo-sm {
   width: 3em;
   height: 3em;
 }
 
-.navbarNsfLogo {
-  width: 5em;
-  height: 5em;
-  margin-left: 1em;
+.navbarLogo {
+  width: 3.5em;
+  height: 3.5em;
   transition-duration: 0.9s;
 }
 
@@ -343,6 +342,11 @@ a {
 
 .scec17 {
   font-size: 1em;
+}
+
+.comitteeLink {
+  font-weight: normal;
+	font-size: 1.1em;
 }
 
 .theOverview {
@@ -759,4 +763,8 @@ border: 15px solid #000000;
 
 .navbar-nav>li>a {
     font-size: 1.05em;
+}
+
+/*Hide default white dot in Bootstrap carousel*/
+.carousel-indicators li {
 }
