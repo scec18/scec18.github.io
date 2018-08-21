@@ -196,7 +196,7 @@
   width:
 }
 
-.nsfLogoOnSponsors {
+.platinumLogos {
   width: 15em;
   height: 15em;
 }
@@ -339,6 +339,10 @@ a {
 	font-size: 17px;
 	transition-duration: 0.4s;
   margin-bottom: -4px;
+}
+
+.scec17 {
+  font-size: 1em;
 }
 
 .theOverview {
