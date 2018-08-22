@@ -182,7 +182,6 @@
 
 .navbarLogo-sm {
   width: 3em;
-  height: 3em;
 }
 
 .navbarLogo {
@@ -201,17 +200,14 @@
 }
 
 .intelLogoOnSponsors-sm {
-  width: 15em;
-  height: 15em;
+  margin-top: 5em;
+  margin-left: -3em;
+  width: 10em;
+  height: 10em;
 }
 
 .nsfLogoWrapper {
   margin-top: 5em;
-}
-
-.intelLogoWrapper-sm {
-  margin-bottom: -5em;
-  margin-top: 0em;
 }
 
 .generousSponsor {
@@ -613,9 +609,9 @@ a:hover {
 }
 
 .nvidiaLogo {
-  height: 8em;
-  width: 9em;
-  margin-left: 4em;
+  margin-top: 5em;
+  height: 10.5em;
+  width: 10.5em;
 }
 
 .sponsorsLogo-sm {
@@ -740,7 +736,6 @@ border: 15px solid #000000;
 }
 
 #navbarTop.scrolled {
-  padding-top: 0px;
   background-color: #08d378;
   transition: background-color 200ms linear;
   padding-bottom: 0px;
