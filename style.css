@@ -762,4 +762,9 @@ border: 15px solid #000000;
 
 /*Hide default white dot in Bootstrap carousel*/
 .carousel-indicators li {
+  visibility: hidden;
+}
+
+.warningMsg {
+  color: red;
 }
