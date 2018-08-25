@@ -768,3 +768,10 @@ border: 15px solid #000000;
 .warningMsg {
   color: red;
 }
+
+.linkToCFPAndStudentGrants {
+  text-decoration: none;
+	color: #000;
+	font-size: 15px;
+  margin-bottom: 0px;
+}
