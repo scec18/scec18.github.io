@@ -772,6 +772,10 @@ border: 15px solid #000000;
 .linkToCFPAndStudentGrants {
   text-decoration: none;
 	color: #000;
-	font-size: 15px;
   margin-bottom: 0px;
+  font-size: 1.1em;
+}
+
+.CFPAndStudentGrantsText {
+  font-size: 1.2em;
 }
