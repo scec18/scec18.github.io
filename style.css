@@ -565,7 +565,7 @@ a:hover {
 }
 
 .speakersPic1 {
-    width: 12em;
+    width: 10em;
 }
 
 .seperator{
@@ -838,11 +838,10 @@ border: 15px solid #000000;
 }
 .dan_keynote_speaker {
   text-align: center;
-  width: 100%;
+  width: 70%;
   height: 20em;
 }
 .panda_keynote_speaker {
-  padding-left: 10em;
   height: 20em;
-  width: 30%;
+  width: 90%;
 }
