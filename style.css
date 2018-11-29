@@ -174,12 +174,6 @@
     border: 15px solid #42c2f4;
 }
 
-.IntelLogoOnTop {
-  position: absolute;
-  top: 1em;
-  left: 2em;
-}
-
 .navbarLogo-sm {
   width: 3em;
 }
@@ -190,10 +184,6 @@
   transition-duration: 0.9s;
 }
 
-.nvdiaLogo {
-  width:
-}
-
 .platinumLogos {
   width: 15em;
   height: 15em;
@@ -202,9 +192,12 @@
 .silverLogos {
   margin-top: -1em;
   margin-bottom: -1em;
-  margin-left: 4em;
-  width: 10em;
-  height: 10em;
+  width: 8.5em;
+  height: 8.5em;
+}
+
+.silverLogoNotFirst {
+  margin-left: 3em;
 }
 
 .intelLogoOnSponsors-sm {
@@ -482,7 +475,7 @@ a:hover {
 }
 
 .navbar-default {
-	background-color: #08d378;
+	background-color: #000;
 }
 
 .eventTitle > h2 {
@@ -774,7 +767,7 @@ border: 15px solid #000000;
 }
 
 #navbarTop.scrolled {
-  background-color: #08d378;
+  background-color: #000;
   transition: background-color 200ms linear;
   padding-bottom: 0px;
   -webkit-transition-property: padding; /* Safari */
